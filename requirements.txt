@@ -2,7 +2,7 @@ pandas==2.3.1
 xarray==2025.6.1
 plotly==6.3.0
 flask==3.1.0
-gunicorn==21.2.0
 netcdf4
+
 
 
