@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_519d66543f7f15eb5ac28f42d3a4ec25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_519d66543f7f15eb5ac28f42d3a4ec25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_519d66543f7f15eb5ac28f42d3a4ec25 = L.map(
+                "map_519d66543f7f15eb5ac28f42d3a4ec25",
+                {
+                    center: [52.0, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+
+            
+
+        
+    
+            var tile_layer_0d25fbeadd7624b32db100a50a6e8454 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0d25fbeadd7624b32db100a50a6e8454.addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+        
+    
+            var feature_group_087124be72d2ad52155c2d01d43c5653 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ce6ddcd955be822c937d3f2496fed0a9 = L.circleMarker(
+                [51.541658, 16.937064],
+                {"bubblingMouseEvents": true, "color": "#ffefa5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefa5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_24fd3031326b4815f4fad8dce1f4d1e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_791e776a2c43e212e2b20362ba7e96d1 = $(`<div id="html_791e776a2c43e212e2b20362ba7e96d1" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsCzLasMob<br>         <b>Nazwa stacji:</b> Czarny Las - Mobil Mercedes<br>         <b>Data uruchomienia:</b> 2013-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2013-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> mobilna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Czarny Las<br>         <b>Adres:</b> nan<br>         <b>Średnia:</b> 0.93         </div>`)[0];
+                popup_24fd3031326b4815f4fad8dce1f4d1e8.setContent(html_791e776a2c43e212e2b20362ba7e96d1);
+            
+        
+
+        circle_marker_ce6ddcd955be822c937d3f2496fed0a9.bindPopup(popup_24fd3031326b4815f4fad8dce1f4d1e8)
+        ;
+
+        
+    
+    
+            circle_marker_ce6ddcd955be822c937d3f2496fed0a9.bindTooltip(
+                `<div>
+                     Czarny Las - Mobil Mercedes (DsCzLasMob)<br>Średnia: 0.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15f65845f496c4e8efd239eb96103d15 = L.circleMarker(
+                [50.912475, 15.31219],
+                {"bubblingMouseEvents": true, "color": "#fffcc3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcc3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_1cb15571827d6573b12cff019e8f91fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5a406ca6471ee37fe97e7fca82095dc = $(`<div id="html_f5a406ca6471ee37fe97e7fca82095dc" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsCzerStraza<br>         <b>Nazwa stacji:</b> Czerniawa<br>         <b>Data uruchomienia:</b> 1996-07-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Czerniawa<br>         <b>Adres:</b> ul. Strażacka 7<br>         <b>Średnia:</b> 0.44         </div>`)[0];
+                popup_1cb15571827d6573b12cff019e8f91fc.setContent(html_f5a406ca6471ee37fe97e7fca82095dc);
+            
+        
+
+        circle_marker_15f65845f496c4e8efd239eb96103d15.bindPopup(popup_1cb15571827d6573b12cff019e8f91fc)
+        ;
+
+        
+    
+    
+            circle_marker_15f65845f496c4e8efd239eb96103d15.bindTooltip(
+                `<div>
+                     Czerniawa (DsCzerStraza)<br>Średnia: 0.44
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29ac7d68afd26b3fe3110a4fbf4cda15 = L.circleMarker(
+                [51.65713, 16.086188],
+                {"bubblingMouseEvents": true, "color": "#febf5aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#febf5aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_8956725963ff57a42391e4ed35a5d904 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f1cbb48e279770aecf025b48b87a44f = $(`<div id="html_4f1cbb48e279770aecf025b48b87a44f" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsGlogNorw<br>         <b>Nazwa stacji:</b> Głogów - Norwida<br>         <b>Data uruchomienia:</b> 2011-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2014-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Głogów<br>         <b>Adres:</b> ul. Norwida 3<br>         <b>Średnia:</b> 2.21         </div>`)[0];
+                popup_8956725963ff57a42391e4ed35a5d904.setContent(html_4f1cbb48e279770aecf025b48b87a44f);
+            
+        
+
+        circle_marker_29ac7d68afd26b3fe3110a4fbf4cda15.bindPopup(popup_8956725963ff57a42391e4ed35a5d904)
+        ;
+
+        
+    
+    
+            circle_marker_29ac7d68afd26b3fe3110a4fbf4cda15.bindTooltip(
+                `<div>
+                     Głogów - Norwida (DsGlogNorw)<br>Średnia: 2.21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b263a7c380874f1c1f195a660e4fd46 = L.circleMarker(
+                [51.224843, 15.232984],
+                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_22c50dc703b065dc1e4de33cb7816f0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b4c25103a3b48d2e33d595b6cd39ccf = $(`<div id="html_3b4c25103a3b48d2e33d595b6cd39ccf" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsJelw05<br>         <b>Nazwa stacji:</b> Jeleniów<br>         <b>Data uruchomienia:</b> 1996-07-01 00:00:00<br>         <b>Data zamknięcia:</b> 2009-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Jeleniów<br>         <b>Adres:</b> nan<br>         <b>Średnia:</b> 0.29         </div>`)[0];
+                popup_22c50dc703b065dc1e4de33cb7816f0d.setContent(html_3b4c25103a3b48d2e33d595b6cd39ccf);
+            
+        
+
+        circle_marker_4b263a7c380874f1c1f195a660e4fd46.bindPopup(popup_22c50dc703b065dc1e4de33cb7816f0d)
+        ;
+
+        
+    
+    
+            circle_marker_4b263a7c380874f1c1f195a660e4fd46.bindTooltip(
+                `<div>
+                     Jeleniów (DsJelw05)<br>Średnia: 0.29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_341c302056b000cc6b6c429db714c096 = L.circleMarker(
+                [51.208104, 16.183784],
+                {"bubblingMouseEvents": true, "color": "#fd8439ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8439ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_14df5c97c8ba19d6d88a84c6e1e46bc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4d68bc61668371a3a21ddf49746c8c2 = $(`<div id="html_c4d68bc61668371a3a21ddf49746c8c2" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsLegPolarna<br>         <b>Nazwa stacji:</b> Legnica, ul. Polarna<br>         <b>Data uruchomienia:</b> 2019-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Legnica<br>         <b>Adres:</b> ul. Polarna 1<br>         <b>Średnia:</b> 3.27         </div>`)[0];
+                popup_14df5c97c8ba19d6d88a84c6e1e46bc3.setContent(html_c4d68bc61668371a3a21ddf49746c8c2);
+            
+        
+
+        circle_marker_341c302056b000cc6b6c429db714c096.bindPopup(popup_14df5c97c8ba19d6d88a84c6e1e46bc3)
+        ;
+
+        
+    
+    
+            circle_marker_341c302056b000cc6b6c429db714c096.bindTooltip(
+                `<div>
+                     Legnica, ul. Polarna (DsLegPolarna)<br>Średnia: 3.27
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b22b9022be150ef7bf4c1642eb1f2f3 = L.circleMarker(
+                [50.579914, 16.514422],
+                {"bubblingMouseEvents": true, "color": "#800026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_8e68968f23676051e133ffd5d55fcb73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a915a274edcc5dfb09ae35cc0a8f2249 = $(`<div id="html_a915a274edcc5dfb09ae35cc0a8f2249" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsNowRudSreb<br>         <b>Nazwa stacji:</b> Nowa Ruda - Srebrna<br>         <b>Data uruchomienia:</b> 2011-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2018-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Nowa Ruda<br>         <b>Adres:</b> ul. Srebrna 1a<br>         <b>Średnia:</b> 6.04         </div>`)[0];
+                popup_8e68968f23676051e133ffd5d55fcb73.setContent(html_a915a274edcc5dfb09ae35cc0a8f2249);
+            
+        
+
+        circle_marker_1b22b9022be150ef7bf4c1642eb1f2f3.bindPopup(popup_8e68968f23676051e133ffd5d55fcb73)
+        ;
+
+        
+    
+    
+            circle_marker_1b22b9022be150ef7bf4c1642eb1f2f3.bindTooltip(
+                `<div>
+                     Nowa Ruda - Srebrna (DsNowRudSreb)<br>Średnia: 6.04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f814ff7d994fe0135415fd6448c31c53 = L.circleMarker(
+                [50.942073, 17.291333],
+                {"bubblingMouseEvents": true, "color": "#fe943fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe943fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_fbba22dde99c92494c941dbdcb53320f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e00feb433b9aca14bde2e567f8bff0d = $(`<div id="html_8e00feb433b9aca14bde2e567f8bff0d" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsOlawZolnAK<br>         <b>Nazwa stacji:</b> Oława, ul. Żołnierzy Armii Krajowej<br>         <b>Data uruchomienia:</b> 2008-07-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Oława<br>         <b>Adres:</b> ul. Żołnierzy AK 9<br>         <b>Średnia:</b> 3.04         </div>`)[0];
+                popup_fbba22dde99c92494c941dbdcb53320f.setContent(html_8e00feb433b9aca14bde2e567f8bff0d);
+            
+        
+
+        circle_marker_f814ff7d994fe0135415fd6448c31c53.bindPopup(popup_fbba22dde99c92494c941dbdcb53320f)
+        ;
+
+        
+    
+    
+            circle_marker_f814ff7d994fe0135415fd6448c31c53.bindTooltip(
+                `<div>
+                     Oława, ul. Żołnierzy Armii Krajowej (DsOlawZolnAK)<br>Średnia: 3.04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a480edba01d213193f68d80b196c7b92 = L.circleMarker(
+                [51.31763, 15.431719],
+                {"bubblingMouseEvents": true, "color": "#ffed9fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffed9fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_3203d025a8951b34ca4a59a8b1d64242 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc8c8ee6e839c05f8529342a31e49977 = $(`<div id="html_cc8c8ee6e839c05f8529342a31e49977" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsOsieczow21<br>         <b>Nazwa stacji:</b> Osieczów<br>         <b>Data uruchomienia:</b> 2010-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Osieczów<br>         <b>Adres:</b> nan<br>         <b>Średnia:</b> 1.04         </div>`)[0];
+                popup_3203d025a8951b34ca4a59a8b1d64242.setContent(html_cc8c8ee6e839c05f8529342a31e49977);
+            
+        
+
+        circle_marker_a480edba01d213193f68d80b196c7b92.bindPopup(popup_3203d025a8951b34ca4a59a8b1d64242)
+        ;
+
+        
+    
+    
+            circle_marker_a480edba01d213193f68d80b196c7b92.bindTooltip(
+                `<div>
+                     Osieczów (DsOsieczow21)<br>Średnia: 1.04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b518777bfa3cdc01f0f862eb2ef2fa9 = L.circleMarker(
+                [51.50237, 16.075051],
+                {"bubblingMouseEvents": true, "color": "#fecf6aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fecf6aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_fc2187d2cfced9d9434433df47624fd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06fc472bb3e36ea76aa4d9c8eec6afab = $(`<div id="html_06fc472bb3e36ea76aa4d9c8eec6afab" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsPolKasztan<br>         <b>Nazwa stacji:</b> Polkowice, ul. Kasztanowa<br>         <b>Data uruchomienia:</b> 2004-05-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Polkowice<br>         <b>Adres:</b> ul. Kasztanowa 29<br>         <b>Średnia:</b> 1.93         </div>`)[0];
+                popup_fc2187d2cfced9d9434433df47624fd5.setContent(html_06fc472bb3e36ea76aa4d9c8eec6afab);
+            
+        
+
+        circle_marker_8b518777bfa3cdc01f0f862eb2ef2fa9.bindPopup(popup_fc2187d2cfced9d9434433df47624fd5)
+        ;
+
+        
+    
+    
+            circle_marker_8b518777bfa3cdc01f0f862eb2ef2fa9.bindTooltip(
+                `<div>
+                     Polkowice, ul. Kasztanowa (DsPolKasztan)<br>Średnia: 1.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95968b459de93943fe99a04f2ac7534e = L.circleMarker(
+                [50.801538, 16.250145],
+                {"bubblingMouseEvents": true, "color": "#ec2c21ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec2c21ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_3100e7cdf321f582c4d3b54770d4eee4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea4f133e433518b55a87477a2baf2fbb = $(`<div id="html_ea4f133e433518b55a87477a2baf2fbb" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsSzczKopPM<br>         <b>Nazwa stacji:</b> Szczawno Zdrój - ul. Kopernika (PM10)<br>         <b>Data uruchomienia:</b> 2007-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2011-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Szczawno-Zdrój<br>         <b>Adres:</b> ul. Kopernika 2<br>         <b>Średnia:</b> 4.35         </div>`)[0];
+                popup_3100e7cdf321f582c4d3b54770d4eee4.setContent(html_ea4f133e433518b55a87477a2baf2fbb);
+            
+        
+
+        circle_marker_95968b459de93943fe99a04f2ac7534e.bindPopup(popup_3100e7cdf321f582c4d3b54770d4eee4)
+        ;
+
+        
+    
+    
+            circle_marker_95968b459de93943fe99a04f2ac7534e.bindTooltip(
+                `<div>
+                     Szczawno Zdrój - ul. Kopernika (PM10) (DsSzczKopPM)<br>Średnia: 4.35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfb16b38ccde239580299de2b3de1f2a = L.circleMarker(
+                [50.804189, 16.254111],
+                {"bubblingMouseEvents": true, "color": "#fd7a36ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7a36ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_653d67c25c422e274d48976420bf1dce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d5f3806ff89c5deb560b02c293fac1f = $(`<div id="html_7d5f3806ff89c5deb560b02c293fac1f" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsSzczaKolej<br>         <b>Nazwa stacji:</b> Szczawno-Zdrój, ul. Kolejowa<br>         <b>Data uruchomienia:</b> 2012-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Szczawno-Zdrój<br>         <b>Adres:</b> ul. Kolejowa 14<br>         <b>Średnia:</b> 3.39         </div>`)[0];
+                popup_653d67c25c422e274d48976420bf1dce.setContent(html_7d5f3806ff89c5deb560b02c293fac1f);
+            
+        
+
+        circle_marker_cfb16b38ccde239580299de2b3de1f2a.bindPopup(popup_653d67c25c422e274d48976420bf1dce)
+        ;
+
+        
+    
+    
+            circle_marker_cfb16b38ccde239580299de2b3de1f2a.bindTooltip(
+                `<div>
+                     Szczawno-Zdrój, ul. Kolejowa (DsSzczaKolej)<br>Średnia: 3.39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1d073ef8a5c554e094e87508bce1b71 = L.circleMarker(
+                [50.768729, 16.269677],
+                {"bubblingMouseEvents": true, "color": "#feab49ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feab49ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_4c3282fd25e95b641f7b4d3f0134e432 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1caf787f9af82cc2928865edc553e93 = $(`<div id="html_f1caf787f9af82cc2928865edc553e93" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsWalbrzWyso<br>         <b>Nazwa stacji:</b> Wałbrzych, ul. Wysockiego<br>         <b>Data uruchomienia:</b> 2005-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Wałbrzych<br>         <b>Adres:</b> ul. Wysockiego 11<br>         <b>Średnia:</b> 2.58         </div>`)[0];
+                popup_4c3282fd25e95b641f7b4d3f0134e432.setContent(html_f1caf787f9af82cc2928865edc553e93);
+            
+        
+
+        circle_marker_e1d073ef8a5c554e094e87508bce1b71.bindPopup(popup_4c3282fd25e95b641f7b4d3f0134e432)
+        ;
+
+        
+    
+    
+            circle_marker_e1d073ef8a5c554e094e87508bce1b71.bindTooltip(
+                `<div>
+                     Wałbrzych, ul. Wysockiego (DsWalbrzWyso)<br>Średnia: 2.58
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_691ed1a3ea6ac4724e76218414219f7e = L.circleMarker(
+                [51.077525, 17.042817],
+                {"bubblingMouseEvents": true, "color": "#feb54eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb54eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_a611c1c32eed01007b066b21aa94b3d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0c4df40d3c5bda06d674edc53cca144 = $(`<div id="html_e0c4df40d3c5bda06d674edc53cca144" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsWrocOrzech<br>         <b>Nazwa stacji:</b> Wrocław, ul. Orzechowa<br>         <b>Data uruchomienia:</b> 2011-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Wrocław<br>         <b>Adres:</b> ul. Orzechowa 61<br>         <b>Średnia:</b> 2.41         </div>`)[0];
+                popup_a611c1c32eed01007b066b21aa94b3d4.setContent(html_e0c4df40d3c5bda06d674edc53cca144);
+            
+        
+
+        circle_marker_691ed1a3ea6ac4724e76218414219f7e.bindPopup(popup_a611c1c32eed01007b066b21aa94b3d4)
+        ;
+
+        
+    
+    
+            circle_marker_691ed1a3ea6ac4724e76218414219f7e.bindTooltip(
+                `<div>
+                     Wrocław, ul. Orzechowa (DsWrocOrzech)<br>Średnia: 2.41
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_388eaf540e1b792188316e3b4279b3d3 = L.circleMarker(
+                [51.10549, 17.036471],
+                {"bubblingMouseEvents": true, "color": "#febb55ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#febb55ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_f4039e80a05cc49313633bf5a33f60b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a6be0a0f33d766c732ea7f0f0443765 = $(`<div id="html_6a6be0a0f33d766c732ea7f0f0443765" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsWrocWie<br>         <b>Nazwa stacji:</b> Wrocław - Wierzbowa<br>         <b>Data uruchomienia:</b> 1994-11-08 00:00:00<br>         <b>Data zamknięcia:</b> 2011-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Wrocław<br>         <b>Adres:</b> ul. Wierzbowa 14/16<br>         <b>Średnia:</b> 2.29         </div>`)[0];
+                popup_f4039e80a05cc49313633bf5a33f60b2.setContent(html_6a6be0a0f33d766c732ea7f0f0443765);
+            
+        
+
+        circle_marker_388eaf540e1b792188316e3b4279b3d3.bindPopup(popup_f4039e80a05cc49313633bf5a33f60b2)
+        ;
+
+        
+    
+    
+            circle_marker_388eaf540e1b792188316e3b4279b3d3.bindTooltip(
+                `<div>
+                     Wrocław - Wierzbowa (DsWrocWie)<br>Średnia: 2.29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39db2aecd33e70ef04c323fe2a38108c = L.circleMarker(
+                [51.129378, 17.02925],
+                {"bubblingMouseEvents": true, "color": "#ffde80ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffde80ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_a6b0ad0b761088b525402c74d871f7be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d09702a16aa574d4574936711f3394c = $(`<div id="html_0d09702a16aa574d4574936711f3394c" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsWrocWybCon<br>         <b>Nazwa stacji:</b> Wrocław, wyb. Conrada-Korzeniowskiego<br>         <b>Data uruchomienia:</b> 2005-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Wrocław<br>         <b>Adres:</b> ul. Wyb. J.Conrada-Korzeniowskiego 18<br>         <b>Średnia:</b> 1.55         </div>`)[0];
+                popup_a6b0ad0b761088b525402c74d871f7be.setContent(html_0d09702a16aa574d4574936711f3394c);
+            
+        
+
+        circle_marker_39db2aecd33e70ef04c323fe2a38108c.bindPopup(popup_a6b0ad0b761088b525402c74d871f7be)
+        ;
+
+        
+    
+    
+            circle_marker_39db2aecd33e70ef04c323fe2a38108c.bindTooltip(
+                `<div>
+                     Wrocław, wyb. Conrada-Korzeniowskiego (DsWrocWybCon)<br>Średnia: 1.55
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75a42028cb50b13a2303a84bba5a1360 = L.circleMarker(
+                [51.150391, 15.008175],
+                {"bubblingMouseEvents": true, "color": "#fead49ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fead49ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_eedb76c47a54ee072cd640bab8624df5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ec30da9bb29d7edbbb89b87850304b7 = $(`<div id="html_2ec30da9bb29d7edbbb89b87850304b7" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsZgorBohGet<br>         <b>Nazwa stacji:</b> Zgorzelec, ul. Bohaterów Getta<br>         <b>Data uruchomienia:</b> 2005-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Zgorzelec<br>         <b>Adres:</b> ul. Bohaterów Getta 1a<br>         <b>Średnia:</b> 2.56         </div>`)[0];
+                popup_eedb76c47a54ee072cd640bab8624df5.setContent(html_2ec30da9bb29d7edbbb89b87850304b7);
+            
+        
+
+        circle_marker_75a42028cb50b13a2303a84bba5a1360.bindPopup(popup_eedb76c47a54ee072cd640bab8624df5)
+        ;
+
+        
+    
+    
+            circle_marker_75a42028cb50b13a2303a84bba5a1360.bindTooltip(
+                `<div>
+                     Zgorzelec, ul. Bohaterów Getta (DsZgorBohGet)<br>Średnia: 2.56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aae1bf73be18982260c0e1a27617ce79 = L.circleMarker(
+                [52.888422, 18.780908],
+                {"bubblingMouseEvents": true, "color": "#ffe289ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe289ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_fa5acfd28df23f94c1a0dfe96d6603c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a229e9ba57912a43991d3246b592569d = $(`<div id="html_a229e9ba57912a43991d3246b592569d" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> KpCiechTezni<br>         <b>Nazwa stacji:</b> Ciechocinek, ul. Tężniowa<br>         <b>Data uruchomienia:</b> 1995-04-05 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> podmiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> KUJAWSKO-POMORSKIE<br>         <b>Miejscowość:</b> Ciechocinek<br>         <b>Adres:</b> ul. Tężniowa - Park Tężniowy<br>         <b>Średnia:</b> 1.40         </div>`)[0];
+                popup_fa5acfd28df23f94c1a0dfe96d6603c0.setContent(html_a229e9ba57912a43991d3246b592569d);
+            
+        
+
+        circle_marker_aae1bf73be18982260c0e1a27617ce79.bindPopup(popup_fa5acfd28df23f94c1a0dfe96d6603c0)
+        ;
+
+        
+    
+    
+            circle_marker_aae1bf73be18982260c0e1a27617ce79.bindTooltip(
+                `<div>
+                     Ciechocinek, ul. Tężniowa (KpCiechTezni)<br>Średnia: 1.40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70700a163a7a445e424051ccd83b75a5 = L.circleMarker(
+                [53.136681, 17.591539],
+                {"bubblingMouseEvents": true, "color": "#ffdd7eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd7eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_e59025f2535f349f055b42e6df742c2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c4af195d5560c5f126464bb18b8d1fd = $(`<div id="html_9c4af195d5560c5f126464bb18b8d1fd" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> KpNaklWawrzy<br>         <b>Nazwa stacji:</b> Nakło nad Notecią, ul. Św. Wawrzyńca<br>         <b>Data uruchomienia:</b> 2020-12-29 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> KUJAWSKO-POMORSKIE<br>         <b>Miejscowość:</b> Nakło nad Notecią<br>         <b>Adres:</b> ul. Świętego Wawrzyńca<br>         <b>Średnia:</b> 1.60         </div>`)[0];
+                popup_e59025f2535f349f055b42e6df742c2c.setContent(html_9c4af195d5560c5f126464bb18b8d1fd);
+            
+        
+
+        circle_marker_70700a163a7a445e424051ccd83b75a5.bindPopup(popup_e59025f2535f349f055b42e6df742c2c)
+        ;
+
+        
+    
+    
+            circle_marker_70700a163a7a445e424051ccd83b75a5.bindTooltip(
+                `<div>
+                     Nakło nad Notecią, ul. Św. Wawrzyńca (KpNaklWawrzy)<br>Średnia: 1.60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_333a02f75d47beb776ed819244f62838 = L.circleMarker(
+                [53.662117, 17.934017],
+                {"bubblingMouseEvents": true, "color": "#fffcc3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcc3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_bd8335944add92b4ef746f34182666f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_badc64de403997dd1ffb941793429cb7 = $(`<div id="html_badc64de403997dd1ffb941793429cb7" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> KpZielBoryTu<br>         <b>Nazwa stacji:</b> Zielonka, Bory Tucholskie<br>         <b>Data uruchomienia:</b> 2004-05-27 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> KUJAWSKO-POMORSKIE<br>         <b>Miejscowość:</b> Zielonka<br>         <b>Adres:</b> Bory Tucholskie<br>         <b>Średnia:</b> 0.45         </div>`)[0];
+                popup_bd8335944add92b4ef746f34182666f2.setContent(html_badc64de403997dd1ffb941793429cb7);
+            
+        
+
+        circle_marker_333a02f75d47beb776ed819244f62838.bindPopup(popup_bd8335944add92b4ef746f34182666f2)
+        ;
+
+        
+    
+    
+            circle_marker_333a02f75d47beb776ed819244f62838.bindTooltip(
+                `<div>
+                     Zielonka, Bory Tucholskie (KpZielBoryTu)<br>Średnia: 0.45
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fa2c7600f1b60d2654e89444d84584f = L.circleMarker(
+                [51.259431, 22.569133],
+                {"bubblingMouseEvents": true, "color": "#fffdc7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffdc7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_f0d1226b0f1b6a2e230381a88f7a4a7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_478fce1056d1fb349f3b8106dade795f = $(`<div id="html_478fce1056d1fb349f3b8106dade795f" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LbLubObywate<br>         <b>Nazwa stacji:</b> Lublin, ul. Obywatelska<br>         <b>Data uruchomienia:</b> 2010-05-21 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> LUBELSKIE<br>         <b>Miejscowość:</b> Lublin<br>         <b>Adres:</b> ul. Obywatelska 13<br>         <b>Średnia:</b> 0.38         </div>`)[0];
+                popup_f0d1226b0f1b6a2e230381a88f7a4a7d.setContent(html_478fce1056d1fb349f3b8106dade795f);
+            
+        
+
+        circle_marker_2fa2c7600f1b60d2654e89444d84584f.bindPopup(popup_f0d1226b0f1b6a2e230381a88f7a4a7d)
+        ;
+
+        
+    
+    
+            circle_marker_2fa2c7600f1b60d2654e89444d84584f.bindTooltip(
+                `<div>
+                     Lublin, ul. Obywatelska (LbLubObywate)<br>Średnia: 0.38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaf74009b3f690893196fd5e0cd7525e = L.circleMarker(
+                [51.273078, 22.551675],
+                {"bubblingMouseEvents": true, "color": "#ffe998ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe998ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_297aa5ebbc1c54004df7e98f949e90bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9375d2df8f67408db29891bbca67c3da = $(`<div id="html_9375d2df8f67408db29891bbca67c3da" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LbLubSliwins<br>         <b>Nazwa stacji:</b> Lublin, ul. Śliwińskiego<br>         <b>Data uruchomienia:</b> 2001-07-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> LUBELSKIE<br>         <b>Miejscowość:</b> Lublin<br>         <b>Adres:</b> ul. Śliwińskiego 5<br>         <b>Średnia:</b> 1.15         </div>`)[0];
+                popup_297aa5ebbc1c54004df7e98f949e90bc.setContent(html_9375d2df8f67408db29891bbca67c3da);
+            
+        
+
+        circle_marker_aaf74009b3f690893196fd5e0cd7525e.bindPopup(popup_297aa5ebbc1c54004df7e98f949e90bc)
+        ;
+
+        
+    
+    
+            circle_marker_aaf74009b3f690893196fd5e0cd7525e.bindTooltip(
+                `<div>
+                     Lublin, ul. Śliwińskiego (LbLubSliwins)<br>Średnia: 1.15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f4e3ab6e89c7db787d117027f115f59 = L.circleMarker(
+                [51.247225, 22.523883],
+                {"bubblingMouseEvents": true, "color": "#fffbc1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbc1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_675ee2e7a1f4f91bc78d1a9e4f813174 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2e1d826a24292c417473d35272209a2 = $(`<div id="html_a2e1d826a24292c417473d35272209a2" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LbLublin_Krasn<br>         <b>Nazwa stacji:</b> Lublin Al. Kraśnicka<br>         <b>Data uruchomienia:</b> 2006-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2010-05-10 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> LUBELSKIE<br>         <b>Miejscowość:</b> Lublin<br>         <b>Adres:</b> al. Kraśnicka 2 CD<br>         <b>Średnia:</b> 0.47         </div>`)[0];
+                popup_675ee2e7a1f4f91bc78d1a9e4f813174.setContent(html_a2e1d826a24292c417473d35272209a2);
+            
+        
+
+        circle_marker_7f4e3ab6e89c7db787d117027f115f59.bindPopup(popup_675ee2e7a1f4f91bc78d1a9e4f813174)
+        ;
+
+        
+    
+    
+            circle_marker_7f4e3ab6e89c7db787d117027f115f59.bindTooltip(
+                `<div>
+                     Lublin Al. Kraśnicka (LbLublin_Krasn)<br>Średnia: 0.47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fafc1de7d432040338144bd9f6def614 = L.circleMarker(
+                [51.776417, 19.452936],
+                {"bubblingMouseEvents": true, "color": "#ffdb79ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdb79ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_2682cb55e6c4b10849b2f9053a9e74ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_337102bdb2578c3b01c0bdaf5ff5580c = $(`<div id="html_337102bdb2578c3b01c0bdaf5ff5580c" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LdLodzLegion<br>         <b>Nazwa stacji:</b> Łódź, ul. Legionów<br>         <b>Data uruchomienia:</b> 2004-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> ŁÓDZKIE<br>         <b>Miejscowość:</b> Łódź<br>         <b>Adres:</b> ul. Legionów 1<br>         <b>Średnia:</b> 1.68         </div>`)[0];
+                popup_2682cb55e6c4b10849b2f9053a9e74ea.setContent(html_337102bdb2578c3b01c0bdaf5ff5580c);
+            
+        
+
+        circle_marker_fafc1de7d432040338144bd9f6def614.bindPopup(popup_2682cb55e6c4b10849b2f9053a9e74ea)
+        ;
+
+        
+    
+    
+            circle_marker_fafc1de7d432040338144bd9f6def614.bindTooltip(
+                `<div>
+                     Łódź, ul. Legionów (LdLodzLegion)<br>Średnia: 1.68
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb07d518987db0d9faa0dd9781a472e4 = L.circleMarker(
+                [51.767292, 19.455339],
+                {"bubblingMouseEvents": true, "color": "#fd8d3cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8d3cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_4b40158244260c28dc5fc89b05f9ee6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4931f3f46be2fd181230188da4bbd928 = $(`<div id="html_4931f3f46be2fd181230188da4bbd928" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LdLodzWIOSARubinst<br>         <b>Nazwa stacji:</b> Łódź-Śródmieście<br>         <b>Data uruchomienia:</b> 2003-11-01 00:00:00<br>         <b>Data zamknięcia:</b> 2014-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> ŁÓDZKIE<br>         <b>Miejscowość:</b> Łódź<br>         <b>Adres:</b> ul. Rubinsteina 77<br>         <b>Średnia:</b> 3.17         </div>`)[0];
+                popup_4b40158244260c28dc5fc89b05f9ee6b.setContent(html_4931f3f46be2fd181230188da4bbd928);
+            
+        
+
+        circle_marker_fb07d518987db0d9faa0dd9781a472e4.bindPopup(popup_4b40158244260c28dc5fc89b05f9ee6b)
+        ;
+
+        
+    
+    
+            circle_marker_fb07d518987db0d9faa0dd9781a472e4.bindTooltip(
+                `<div>
+                     Łódź-Śródmieście (LdLodzWIOSARubinst)<br>Średnia: 3.17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90c13f25ebddb264ca6289ccd842de8d = L.circleMarker(
+                [51.939783, 15.518861],
+                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_52f2c11d52265ca674f96b61a797c001 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0002bdaf1ebc2188a8d780d8f5c71cdd = $(`<div id="html_0002bdaf1ebc2188a8d780d8f5c71cdd" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> LuZielKrotka<br>         <b>Nazwa stacji:</b> Zielona Góra ul. Krótka<br>         <b>Data uruchomienia:</b> 2005-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> LUBUSKIE<br>         <b>Miejscowość:</b> Zielona Góra<br>         <b>Adres:</b> ul. Krótka<br>         <b>Średnia:</b> 0.99         </div>`)[0];
+                popup_52f2c11d52265ca674f96b61a797c001.setContent(html_0002bdaf1ebc2188a8d780d8f5c71cdd);
+            
+        
+
+        circle_marker_90c13f25ebddb264ca6289ccd842de8d.bindPopup(popup_52f2c11d52265ca674f96b61a797c001)
+        ;
+
+        
+    
+    
+            circle_marker_90c13f25ebddb264ca6289ccd842de8d.bindTooltip(
+                `<div>
+                     Zielona Góra ul. Krótka (LuZielKrotka)<br>Średnia: 0.99
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b468862579ec85e91a8f61bde99ddee = L.circleMarker(
+                [50.010575, 19.949189],
+                {"bubblingMouseEvents": true, "color": "#feba54ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feba54ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_86c2d68a3d198bf1b08c99aeb91032fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f04f6949c3a4b52857bbc1b5dfa39ea7 = $(`<div id="html_f04f6949c3a4b52857bbc1b5dfa39ea7" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> MpKrakBujaka<br>         <b>Nazwa stacji:</b> Kraków, ul. Bujaka<br>         <b>Data uruchomienia:</b> 2010-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> MAŁOPOLSKIE<br>         <b>Miejscowość:</b> Kraków<br>         <b>Adres:</b> ul. Bujaka<br>         <b>Średnia:</b> 2.31         </div>`)[0];
+                popup_86c2d68a3d198bf1b08c99aeb91032fb.setContent(html_f04f6949c3a4b52857bbc1b5dfa39ea7);
+            
+        
+
+        circle_marker_8b468862579ec85e91a8f61bde99ddee.bindPopup(popup_86c2d68a3d198bf1b08c99aeb91032fb)
+        ;
+
+        
+    
+    
+            circle_marker_8b468862579ec85e91a8f61bde99ddee.bindTooltip(
+                `<div>
+                     Kraków, ul. Bujaka (MpKrakBujaka)<br>Średnia: 2.31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bae3cbb2974e359cd0f4983ad97fae3d = L.circleMarker(
+                [50.0875, 19.926111],
+                {"bubblingMouseEvents": true, "color": "#feb44eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb44eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_5d39a4f1b8088fa3b9b938264d0ed086 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97d3eaee40bf110eb5c267119a2d99a3 = $(`<div id="html_97d3eaee40bf110eb5c267119a2d99a3" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> MpKrakowWIOSPrad6115<br>         <b>Nazwa stacji:</b> Krowodrza-Kraków, szpital Jana Pawła II<br>         <b>Data uruchomienia:</b> 2003-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2010-02-28 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> MAŁOPOLSKIE<br>         <b>Miejscowość:</b> Kraków<br>         <b>Adres:</b> ul. Prądnicka<br>         <b>Średnia:</b> 2.42         </div>`)[0];
+                popup_5d39a4f1b8088fa3b9b938264d0ed086.setContent(html_97d3eaee40bf110eb5c267119a2d99a3);
+            
+        
+
+        circle_marker_bae3cbb2974e359cd0f4983ad97fae3d.bindPopup(popup_5d39a4f1b8088fa3b9b938264d0ed086)
+        ;
+
+        
+    
+    
+            circle_marker_bae3cbb2974e359cd0f4983ad97fae3d.bindTooltip(
+                `<div>
+                     Krowodrza-Kraków, szpital Jana Pawła II (MpKrakowWIOSPrad6115)<br>Średnia: 2.42
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bba67130551f04783cf8b513868ccec3 = L.circleMarker(
+                [52.228649, 20.917513],
+                {"bubblingMouseEvents": true, "color": "#fff0a7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_5cdc2000fbb6385c6d6689c46cd69f14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_490890f8d7a67b6def6d5af19590c55b = $(`<div id="html_490890f8d7a67b6def6d5af19590c55b" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> MzWarAKrzywo<br>         <b>Nazwa stacji:</b> Warszawa, ul. Krzywoń<br>         <b>Data uruchomienia:</b> 2011-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> MAZOWIECKIE<br>         <b>Miejscowość:</b> Warszawa<br>         <b>Adres:</b> ul. Anieli Krzywoń<br>         <b>Średnia:</b> 0.90         </div>`)[0];
+                popup_5cdc2000fbb6385c6d6689c46cd69f14.setContent(html_490890f8d7a67b6def6d5af19590c55b);
+            
+        
+
+        circle_marker_bba67130551f04783cf8b513868ccec3.bindPopup(popup_5cdc2000fbb6385c6d6689c46cd69f14)
+        ;
+
+        
+    
+    
+            circle_marker_bba67130551f04783cf8b513868ccec3.bindTooltip(
+                `<div>
+                     Warszawa, ul. Krzywoń (MzWarAKrzywo)<br>Średnia: 0.90
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c22e6c8bd7daba7a5e298bf44c815ead = L.circleMarker(
+                [52.237499, 20.98793],
+                {"bubblingMouseEvents": true, "color": "#fff6b5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff6b5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_d9266f9120eb10b2ac39d91fc3da3e4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b7e9aeb81e1b990ac27e20dd694daf1 = $(`<div id="html_5b7e9aeb81e1b990ac27e20dd694daf1" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> MzWarszZelazWSSE<br>         <b>Nazwa stacji:</b> Warszawa-Żelazna<br>         <b>Data uruchomienia:</b> 1976-09-01 00:00:00<br>         <b>Data zamknięcia:</b> 2009-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> MAZOWIECKIE<br>         <b>Miejscowość:</b> Warszawa<br>         <b>Adres:</b> ul. Żelazna 79<br>         <b>Średnia:</b> 0.67         </div>`)[0];
+                popup_d9266f9120eb10b2ac39d91fc3da3e4f.setContent(html_5b7e9aeb81e1b990ac27e20dd694daf1);
+            
+        
+
+        circle_marker_c22e6c8bd7daba7a5e298bf44c815ead.bindPopup(popup_d9266f9120eb10b2ac39d91fc3da3e4f)
+        ;
+
+        
+    
+    
+            circle_marker_c22e6c8bd7daba7a5e298bf44c815ead.bindTooltip(
+                `<div>
+                     Warszawa-Żelazna (MzWarszZelazWSSE)<br>Średnia: 0.67
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b38c77b3c231a6c1a7f32a24b6540f6 = L.circleMarker(
+                [50.200942, 17.816453],
+                {"bubblingMouseEvents": true, "color": "#fe9740ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9740ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_bcd36fc331d2c2d2dd6b0b03497e166c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad8714fa18e51cf3ea8bdd24ecce4f6b = $(`<div id="html_ad8714fa18e51cf3ea8bdd24ecce4f6b" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> OpGlubKochan<br>         <b>Nazwa stacji:</b> Głubczyce manualna 1<br>         <b>Data uruchomienia:</b> 2005-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2016-01-01 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> OPOLSKIE<br>         <b>Miejscowość:</b> Głubczyce<br>         <b>Adres:</b> ul. Kochanowskiego 23<br>         <b>Średnia:</b> 2.98         </div>`)[0];
+                popup_bcd36fc331d2c2d2dd6b0b03497e166c.setContent(html_ad8714fa18e51cf3ea8bdd24ecce4f6b);
+            
+        
+
+        circle_marker_8b38c77b3c231a6c1a7f32a24b6540f6.bindPopup(popup_bcd36fc331d2c2d2dd6b0b03497e166c)
+        ;
+
+        
+    
+    
+            circle_marker_8b38c77b3c231a6c1a7f32a24b6540f6.bindTooltip(
+                `<div>
+                     Głubczyce manualna 1 (OpGlubKochan)<br>Średnia: 2.98
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e060d72f53bc0e11584c4abd2f366ff = L.circleMarker(
+                [50.676856, 17.950278],
+                {"bubblingMouseEvents": true, "color": "#ffdb7aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdb7aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_28b831129aaa79dd66dd90e316acbc90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a79046b34de544c3e35dc956fbd81793 = $(`<div id="html_a79046b34de544c3e35dc956fbd81793" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> OpOpoleOsAKr<br>         <b>Nazwa stacji:</b> Opole, os. Armii Krajowej<br>         <b>Data uruchomienia:</b> 2010-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> OPOLSKIE<br>         <b>Miejscowość:</b> Opole<br>         <b>Adres:</b> os. Armii Krajowej<br>         <b>Średnia:</b> 1.66         </div>`)[0];
+                popup_28b831129aaa79dd66dd90e316acbc90.setContent(html_a79046b34de544c3e35dc956fbd81793);
+            
+        
+
+        circle_marker_8e060d72f53bc0e11584c4abd2f366ff.bindPopup(popup_28b831129aaa79dd66dd90e316acbc90)
+        ;
+
+        
+    
+    
+            circle_marker_8e060d72f53bc0e11584c4abd2f366ff.bindTooltip(
+                `<div>
+                     Opole, os. Armii Krajowej (OpOpoleOsAKr)<br>Średnia: 1.66
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2831dc20eaae0e53b42ef391c9dbfb28 = L.circleMarker(
+                [53.144122, 23.216322],
+                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_516873dc648995d1fefc9fb21cb07b35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de19bb75201413d66dc8b747747a6bad = $(`<div id="html_de19bb75201413d66dc8b747747a6bad" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PdBialPPiech<br>         <b>Nazwa stacji:</b> Białystok, ul. 42 Pułku Piechoty<br>         <b>Data uruchomienia:</b> 2022-08-22 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> podmiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODLASKIE<br>         <b>Miejscowość:</b> Białystok<br>         <b>Adres:</b> ul. 42 Pułku Piechoty 117<br>         <b>Średnia:</b> 0.30         </div>`)[0];
+                popup_516873dc648995d1fefc9fb21cb07b35.setContent(html_de19bb75201413d66dc8b747747a6bad);
+            
+        
+
+        circle_marker_2831dc20eaae0e53b42ef391c9dbfb28.bindPopup(popup_516873dc648995d1fefc9fb21cb07b35)
+        ;
+
+        
+    
+    
+            circle_marker_2831dc20eaae0e53b42ef391c9dbfb28.bindTooltip(
+                `<div>
+                     Białystok, ul. 42 Pułku Piechoty (PdBialPPiech)<br>Średnia: 0.30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c00ddf114c07208e4f045055147f7f32 = L.circleMarker(
+                [53.126689, 23.155869],
+                {"bubblingMouseEvents": true, "color": "#fff3afff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3afff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_b34460753c28105000d74fe5069ebef9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_487644badc87cdb4e1918648cf697e31 = $(`<div id="html_487644badc87cdb4e1918648cf697e31" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PdBialWaszyn<br>         <b>Nazwa stacji:</b> Białystok, ul. Waszyngtona<br>         <b>Data uruchomienia:</b> 2004-09-01 00:00:00<br>         <b>Data zamknięcia:</b> 2023-11-13 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODLASKIE<br>         <b>Miejscowość:</b> Białystok<br>         <b>Adres:</b> ul. Waszyngtona 16<br>         <b>Średnia:</b> 0.77         </div>`)[0];
+                popup_b34460753c28105000d74fe5069ebef9.setContent(html_487644badc87cdb4e1918648cf697e31);
+            
+        
+
+        circle_marker_c00ddf114c07208e4f045055147f7f32.bindPopup(popup_b34460753c28105000d74fe5069ebef9)
+        ;
+
+        
+    
+    
+            circle_marker_c00ddf114c07208e4f045055147f7f32.bindTooltip(
+                `<div>
+                     Białystok, ul. Waszyngtona (PdBialWaszyn)<br>Średnia: 0.77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_887f9c462e56c9a629cb119f254b8f0a = L.circleMarker(
+                [54.115897, 22.938464],
+                {"bubblingMouseEvents": true, "color": "#fff1a8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_36324e73e826677a191a2c0ee99cf36a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cd9ab67bd34dbbafd3fc780c87ce5bd = $(`<div id="html_2cd9ab67bd34dbbafd3fc780c87ce5bd" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PdSuwPulask2<br>         <b>Nazwa stacji:</b> Suwałki, ul. Pułaskiego 26<br>         <b>Data uruchomienia:</b> 2018-08-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODLASKIE<br>         <b>Miejscowość:</b> Suwałki<br>         <b>Adres:</b> ul. Pułaskiego 26<br>         <b>Średnia:</b> 0.88         </div>`)[0];
+                popup_36324e73e826677a191a2c0ee99cf36a.setContent(html_2cd9ab67bd34dbbafd3fc780c87ce5bd);
+            
+        
+
+        circle_marker_887f9c462e56c9a629cb119f254b8f0a.bindPopup(popup_36324e73e826677a191a2c0ee99cf36a)
+        ;
+
+        
+    
+    
+            circle_marker_887f9c462e56c9a629cb119f254b8f0a.bindTooltip(
+                `<div>
+                     Suwałki, ul. Pułaskiego 26 (PdSuwPulask2)<br>Średnia: 0.88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5762f3b9aebbec94631777aaeca535b = L.circleMarker(
+                [54.117878, 22.934608],
+                {"bubblingMouseEvents": true, "color": "#fff2acff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2acff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_18fcb38ead2a175c0a7657cfc598571a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0949089186a07e19fc1e1f54af6b510f = $(`<div id="html_0949089186a07e19fc1e1f54af6b510f" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PdSuwPulaski<br>         <b>Nazwa stacji:</b> Suwałki, ul. Pułaskiego 73<br>         <b>Data uruchomienia:</b> 1992-03-18 00:00:00<br>         <b>Data zamknięcia:</b> 2017-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODLASKIE<br>         <b>Miejscowość:</b> Suwałki<br>         <b>Adres:</b> ul. Pułaskiego<br>         <b>Średnia:</b> 0.82         </div>`)[0];
+                popup_18fcb38ead2a175c0a7657cfc598571a.setContent(html_0949089186a07e19fc1e1f54af6b510f);
+            
+        
+
+        circle_marker_e5762f3b9aebbec94631777aaeca535b.bindPopup(popup_18fcb38ead2a175c0a7657cfc598571a)
+        ;
+
+        
+    
+    
+            circle_marker_e5762f3b9aebbec94631777aaeca535b.bindTooltip(
+                `<div>
+                     Suwałki, ul. Pułaskiego 73 (PdSuwPulaski)<br>Średnia: 0.82
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5ba57fdbb0110b9f172e5d8878009c6 = L.circleMarker(
+                [49.744886, 21.454617],
+                {"bubblingMouseEvents": true, "color": "#ffdf82ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdf82ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_5426e0e0a992815aa15522b81addce16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b2d64bd6ee5314d4c7f7f54c05aa099 = $(`<div id="html_4b2d64bd6ee5314d4c7f7f54c05aa099" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PkJasloSikor<br>         <b>Nazwa stacji:</b> Jaslo, ul. Sikorskiego<br>         <b>Data uruchomienia:</b> 2009-08-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODKARPACKIE<br>         <b>Miejscowość:</b> Jasło<br>         <b>Adres:</b> Sikorskiego<br>         <b>Średnia:</b> 1.52         </div>`)[0];
+                popup_5426e0e0a992815aa15522b81addce16.setContent(html_4b2d64bd6ee5314d4c7f7f54c05aa099);
+            
+        
+
+        circle_marker_e5ba57fdbb0110b9f172e5d8878009c6.bindPopup(popup_5426e0e0a992815aa15522b81addce16)
+        ;
+
+        
+    
+    
+            circle_marker_e5ba57fdbb0110b9f172e5d8878009c6.bindTooltip(
+                `<div>
+                     Jaslo, ul. Sikorskiego (PkJasloSikor)<br>Średnia: 1.52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e23dc2d2c7e90b75255a6d91d51f728 = L.circleMarker(
+                [49.739444, 21.482222],
+                {"bubblingMouseEvents": true, "color": "#fed874ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed874ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_6059f755bda940b7ee2e161e4bfbd21d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8258bbadb9c0bba206dd44a9ae03ba84 = $(`<div id="html_8258bbadb9c0bba206dd44a9ae03ba84" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PkJasloWIOSFlor2<br>         <b>Nazwa stacji:</b> Jasło-Floriańska-WIOS2<br>         <b>Data uruchomienia:</b> 2006-08-04 00:00:00<br>         <b>Data zamknięcia:</b> 2010-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODKARPACKIE<br>         <b>Miejscowość:</b> Jasło<br>         <b>Adres:</b> ul. Floriańska 108<br>         <b>Średnia:</b> 1.76         </div>`)[0];
+                popup_6059f755bda940b7ee2e161e4bfbd21d.setContent(html_8258bbadb9c0bba206dd44a9ae03ba84);
+            
+        
+
+        circle_marker_0e23dc2d2c7e90b75255a6d91d51f728.bindPopup(popup_6059f755bda940b7ee2e161e4bfbd21d)
+        ;
+
+        
+    
+    
+            circle_marker_0e23dc2d2c7e90b75255a6d91d51f728.bindTooltip(
+                `<div>
+                     Jasło-Floriańska-WIOS2 (PkJasloWIOSFlor2)<br>Średnia: 1.76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65dade3f357c72e974e9d90e1804d647 = L.circleMarker(
+                [49.782778, 22.766667],
+                {"bubblingMouseEvents": true, "color": "#fe9941ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9941ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_a7623f292a3f7e483e4accc2174055ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a136def457282179ee4fe4346cfac300 = $(`<div id="html_a136def457282179ee4fe4346cfac300" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PkPrzemWIOSPDom<br>         <b>Nazwa stacji:</b> Przemyśl-Pl.Dominikański-WIOS<br>         <b>Data uruchomienia:</b> 2002-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2011-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> PODKARPACKIE<br>         <b>Miejscowość:</b> Przemyśl<br>         <b>Adres:</b> pl. Dominikański<br>         <b>Średnia:</b> 2.93         </div>`)[0];
+                popup_a7623f292a3f7e483e4accc2174055ac.setContent(html_a136def457282179ee4fe4346cfac300);
+            
+        
+
+        circle_marker_65dade3f357c72e974e9d90e1804d647.bindPopup(popup_a7623f292a3f7e483e4accc2174055ac)
+        ;
+
+        
+    
+    
+            circle_marker_65dade3f357c72e974e9d90e1804d647.bindTooltip(
+                `<div>
+                     Przemyśl-Pl.Dominikański-WIOS (PkPrzemWIOSPDom)<br>Średnia: 2.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5def90edfcc44450a526baea215df3bd = L.circleMarker(
+                [50.024242, 22.010575],
+                {"bubblingMouseEvents": true, "color": "#fff0a7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_fc4d40f1a442fb5bb9b4e49a18d0228b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9d7ff3fcfdfefc42baa5c5431edb8e4 = $(`<div id="html_c9d7ff3fcfdfefc42baa5c5431edb8e4" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PkRzeszRejta<br>         <b>Nazwa stacji:</b> Rzeszów, ul. Rejtana<br>         <b>Data uruchomienia:</b> 2010-02-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> PODKARPACKIE<br>         <b>Miejscowość:</b> Rzeszów<br>         <b>Adres:</b> Rejtana<br>         <b>Średnia:</b> 0.89         </div>`)[0];
+                popup_fc4d40f1a442fb5bb9b4e49a18d0228b.setContent(html_c9d7ff3fcfdfefc42baa5c5431edb8e4);
+            
+        
+
+        circle_marker_5def90edfcc44450a526baea215df3bd.bindPopup(popup_fc4d40f1a442fb5bb9b4e49a18d0228b)
+        ;
+
+        
+    
+    
+            circle_marker_5def90edfcc44450a526baea215df3bd.bindTooltip(
+                `<div>
+                     Rzeszów, ul. Rejtana (PkRzeszRejta)<br>Średnia: 0.89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71b3174a77d34d8d2fb5340c10466c78 = L.circleMarker(
+                [54.119167, 17.968611],
+                {"bubblingMouseEvents": true, "color": "#fe9e43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9e43ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_b0c5e4eb21dcb76464a8bdd4599d13ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de10d2267f20bf851ed70f04185e833f = $(`<div id="html_de10d2267f20bf851ed70f04185e833f" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> Pm.06.s712m<br>         <b>Nazwa stacji:</b> WIOŚ Kościerzyna - Staszica<br>         <b>Data uruchomienia:</b> 2003-05-26 00:00:00<br>         <b>Data zamknięcia:</b> 2011-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Kościerzyna<br>         <b>Adres:</b> ul. Staszica 6<br>         <b>Średnia:</b> 2.85         </div>`)[0];
+                popup_b0c5e4eb21dcb76464a8bdd4599d13ef.setContent(html_de10d2267f20bf851ed70f04185e833f);
+            
+        
+
+        circle_marker_71b3174a77d34d8d2fb5340c10466c78.bindPopup(popup_b0c5e4eb21dcb76464a8bdd4599d13ef)
+        ;
+
+        
+    
+    
+            circle_marker_71b3174a77d34d8d2fb5340c10466c78.bindTooltip(
+                `<div>
+                     WIOŚ Kościerzyna - Staszica (Pm.06.s712m)<br>Średnia: 2.85
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c405c388364e0e1a61a3c5931fabd710 = L.circleMarker(
+                [54.082164, 18.786156],
+                {"bubblingMouseEvents": true, "color": "#fed875ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed875ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_95ae502f2f98f28690cf4be953181dc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_022db49d2e6eb370c208547e61e19137 = $(`<div id="html_022db49d2e6eb370c208547e61e19137" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> Pm.aw07m<br>         <b>Nazwa stacji:</b> WIOŚ Tczew - Targowa<br>         <b>Data uruchomienia:</b> 2010-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2011-02-28 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Tczew<br>         <b>Adres:</b> ul. Targowa<br>         <b>Średnia:</b> 1.75         </div>`)[0];
+                popup_95ae502f2f98f28690cf4be953181dc4.setContent(html_022db49d2e6eb370c208547e61e19137);
+            
+        
+
+        circle_marker_c405c388364e0e1a61a3c5931fabd710.bindPopup(popup_95ae502f2f98f28690cf4be953181dc4)
+        ;
+
+        
+    
+    
+            circle_marker_c405c388364e0e1a61a3c5931fabd710.bindTooltip(
+                `<div>
+                     WIOŚ Tczew - Targowa (Pm.aw07m)<br>Średnia: 1.75
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d31be0c205b0ac4038198e2a86e51c9a = L.circleMarker(
+                [54.086944, 18.797222],
+                {"bubblingMouseEvents": true, "color": "#ffdd7eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd7eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_51b12b63dae8a7004549a3fc7f50c555 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f45f344e7a4493d26dd189406cf8480 = $(`<div id="html_5f45f344e7a4493d26dd189406cf8480" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> Pm14TCZEw06m<br>         <b>Nazwa stacji:</b> Tczew manualny<br>         <b>Data uruchomienia:</b> 2004-08-01 00:00:00<br>         <b>Data zamknięcia:</b> 2009-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Tczew<br>         <b>Adres:</b> ul. Jarosława Dąbrowskiego<br>         <b>Średnia:</b> 1.59         </div>`)[0];
+                popup_51b12b63dae8a7004549a3fc7f50c555.setContent(html_5f45f344e7a4493d26dd189406cf8480);
+            
+        
+
+        circle_marker_d31be0c205b0ac4038198e2a86e51c9a.bindPopup(popup_51b12b63dae8a7004549a3fc7f50c555)
+        ;
+
+        
+    
+    
+            circle_marker_d31be0c205b0ac4038198e2a86e51c9a.bindTooltip(
+                `<div>
+                     Tczew manualny (Pm14TCZEw06m)<br>Średnia: 1.59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d97b9fe5dfee21fb74aa1dbd15861fe8 = L.circleMarker(
+                [54.352722, 18.673417],
+                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_956218425f6b1772b557df776ee8bb77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f32da9bc3b18130eb4c456d8a5098939 = $(`<div id="html_f32da9bc3b18130eb4c456d8a5098939" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmGdaGleboka<br>         <b>Nazwa stacji:</b> WIOŚ Gdańsk - Głęboka<br>         <b>Data uruchomienia:</b> 2004-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2016-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Gdańsk<br>         <b>Adres:</b> ul. Głęboka 11<br>         <b>Średnia:</b> 1.00         </div>`)[0];
+                popup_956218425f6b1772b557df776ee8bb77.setContent(html_f32da9bc3b18130eb4c456d8a5098939);
+            
+        
+
+        circle_marker_d97b9fe5dfee21fb74aa1dbd15861fe8.bindPopup(popup_956218425f6b1772b557df776ee8bb77)
+        ;
+
+        
+    
+    
+            circle_marker_d97b9fe5dfee21fb74aa1dbd15861fe8.bindTooltip(
+                `<div>
+                     WIOŚ Gdańsk - Głęboka (PmGdaGleboka)<br>Średnia: 1.00
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e07999a11916955f88166126bfc4b4c9 = L.circleMarker(
+                [54.380279, 18.620274],
+                {"bubblingMouseEvents": true, "color": "#fff2acff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2acff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_75c2b2a26366f3b7ace1dcb20406999d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74a694a88f8c3ad05d1b78fae4e9463a = $(`<div id="html_74a694a88f8c3ad05d1b78fae4e9463a" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmGdaLeczk81<br>         <b>Nazwa stacji:</b> Gdańsk, ul. Leczkowa 1<br>         <b>Data uruchomienia:</b> 2008-05-01 00:00:00<br>         <b>Data zamknięcia:</b> 2021-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Gdańsk<br>         <b>Adres:</b> ul. Leczkowa<br>         <b>Średnia:</b> 0.81         </div>`)[0];
+                popup_75c2b2a26366f3b7ace1dcb20406999d.setContent(html_74a694a88f8c3ad05d1b78fae4e9463a);
+            
+        
+
+        circle_marker_e07999a11916955f88166126bfc4b4c9.bindPopup(popup_75c2b2a26366f3b7ace1dcb20406999d)
+        ;
+
+        
+    
+    
+            circle_marker_e07999a11916955f88166126bfc4b4c9.bindTooltip(
+                `<div>
+                     Gdańsk, ul. Leczkowa 1 (PmGdaLeczk81)<br>Średnia: 0.81
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_128fa45e63713761b9d3f47bb8e4f433 = L.circleMarker(
+                [54.380279, 18.620274],
+                {"bubblingMouseEvents": true, "color": "#fff7b8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7b8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_7e6b251cd2e888f4719a06497d20cc4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4e2d0219593eecdf0f114e82ed1f0aa = $(`<div id="html_f4e2d0219593eecdf0f114e82ed1f0aa" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmGdaLeczkow<br>         <b>Nazwa stacji:</b> Gdańsk, ul. Leczkowa<br>         <b>Data uruchomienia:</b> 1998-10-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Gdańsk<br>         <b>Adres:</b> ul. Leczkowa<br>         <b>Średnia:</b> 0.62         </div>`)[0];
+                popup_7e6b251cd2e888f4719a06497d20cc4f.setContent(html_f4e2d0219593eecdf0f114e82ed1f0aa);
+            
+        
+
+        circle_marker_128fa45e63713761b9d3f47bb8e4f433.bindPopup(popup_7e6b251cd2e888f4719a06497d20cc4f)
+        ;
+
+        
+    
+    
+            circle_marker_128fa45e63713761b9d3f47bb8e4f433.bindTooltip(
+                `<div>
+                     Gdańsk, ul. Leczkowa (PmGdaLeczkow)<br>Średnia: 0.62
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5da1613bd403dbc43155e9983252f09b = L.circleMarker(
+                [54.50805, 18.539831],
+                {"bubblingMouseEvents": true, "color": "#fff6b6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff6b6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_27ffb39d5452a3534ae2b5d2f7f59157 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4746e42daf1bb57cd07856da3de41ac3 = $(`<div id="html_4746e42daf1bb57cd07856da3de41ac3" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmGdyJozBema<br>         <b>Nazwa stacji:</b> WIOŚ Gdynia - Bema<br>         <b>Data uruchomienia:</b> 2012-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2019-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Gdynia<br>         <b>Adres:</b> ul. Bema<br>         <b>Średnia:</b> 0.66         </div>`)[0];
+                popup_27ffb39d5452a3534ae2b5d2f7f59157.setContent(html_4746e42daf1bb57cd07856da3de41ac3);
+            
+        
+
+        circle_marker_5da1613bd403dbc43155e9983252f09b.bindPopup(popup_27ffb39d5452a3534ae2b5d2f7f59157)
+        ;
+
+        
+    
+    
+            circle_marker_5da1613bd403dbc43155e9983252f09b.bindTooltip(
+                `<div>
+                     WIOŚ Gdynia - Bema (PmGdyJozBema)<br>Średnia: 0.66
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28981e0929691be11cb65cc054ad5bb0 = L.circleMarker(
+                [54.120694, 17.975861],
+                {"bubblingMouseEvents": true, "color": "#fe9d43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9d43ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_c4f3c3f3c30038cd479cd82beedda4d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3af5de79bb0f077af726a6ad35e2e116 = $(`<div id="html_3af5de79bb0f077af726a6ad35e2e116" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmKosTargowa<br>         <b>Nazwa stacji:</b> Kościerzyna, ul. Targowa<br>         <b>Data uruchomienia:</b> 2012-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Kościerzyna<br>         <b>Adres:</b> ul. Targowa<br>         <b>Średnia:</b> 2.85         </div>`)[0];
+                popup_c4f3c3f3c30038cd479cd82beedda4d6.setContent(html_3af5de79bb0f077af726a6ad35e2e116);
+            
+        
+
+        circle_marker_28981e0929691be11cb65cc054ad5bb0.bindPopup(popup_c4f3c3f3c30038cd479cd82beedda4d6)
+        ;
+
+        
+    
+    
+            circle_marker_28981e0929691be11cb65cc054ad5bb0.bindTooltip(
+                `<div>
+                     Kościerzyna, ul. Targowa (PmKosTargowa)<br>Średnia: 2.85
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7c553b66c592d0771d8b6f23db8c3e5 = L.circleMarker(
+                [53.722361, 18.936917],
+                {"bubblingMouseEvents": true, "color": "#fff3adff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3adff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_67952f8409f4035030cec1a8977e943f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2da1814a828fab25b20198aaccfa251b = $(`<div id="html_2da1814a828fab25b20198aaccfa251b" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmKwiSportow<br>         <b>Nazwa stacji:</b> Kwidzyn, ul. Sportowa<br>         <b>Data uruchomienia:</b> 2010-06-20 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Kwidzyn<br>         <b>Adres:</b> ul. Sportowa<br>         <b>Średnia:</b> 0.81         </div>`)[0];
+                popup_67952f8409f4035030cec1a8977e943f.setContent(html_2da1814a828fab25b20198aaccfa251b);
+            
+        
+
+        circle_marker_a7c553b66c592d0771d8b6f23db8c3e5.bindPopup(popup_67952f8409f4035030cec1a8977e943f)
+        ;
+
+        
+    
+    
+            circle_marker_a7c553b66c592d0771d8b6f23db8c3e5.bindTooltip(
+                `<div>
+                     Kwidzyn, ul. Sportowa (PmKwiSportow)<br>Średnia: 0.81
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e59a7af998cff18aa686f62c7e26b696 = L.circleMarker(
+                [54.104111, 18.182972],
+                {"bubblingMouseEvents": true, "color": "#fff8b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8b9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_bbf2c27bbdfb3a034c79da1161d731f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_073f0548447723ec09a06ff4c76db800 = $(`<div id="html_073f0548447723ec09a06ff4c76db800" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmLinieKosci<br>         <b>Nazwa stacji:</b> Liniewko Kościerskie<br>         <b>Data uruchomienia:</b> 2012-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Liniewko Kościerskie<br>         <b>Adres:</b> nan<br>         <b>Średnia:</b> 0.60         </div>`)[0];
+                popup_bbf2c27bbdfb3a034c79da1161d731f9.setContent(html_073f0548447723ec09a06ff4c76db800);
+            
+        
+
+        circle_marker_e59a7af998cff18aa686f62c7e26b696.bindPopup(popup_bbf2c27bbdfb3a034c79da1161d731f9)
+        ;
+
+        
+    
+    
+            circle_marker_e59a7af998cff18aa686f62c7e26b696.bindTooltip(
+                `<div>
+                     Liniewko Kościerskie (PmLinieKosci)<br>Średnia: 0.60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f4808943a9ee4034360d34776e584b6 = L.circleMarker(
+                [54.031247, 19.032899],
+                {"bubblingMouseEvents": true, "color": "#ffeb9bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_71014a90b515920984f33208ee2d9725 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a23566281c7311856c96d55a6e31bed2 = $(`<div id="html_a23566281c7311856c96d55a6e31bed2" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmMalMickiew<br>         <b>Nazwa stacji:</b> Malbork, ul. Mickiewicza<br>         <b>Data uruchomienia:</b> 2012-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Malbork<br>         <b>Adres:</b> ul. Mickiewicza<br>         <b>Średnia:</b> 1.10         </div>`)[0];
+                popup_71014a90b515920984f33208ee2d9725.setContent(html_a23566281c7311856c96d55a6e31bed2);
+            
+        
+
+        circle_marker_9f4808943a9ee4034360d34776e584b6.bindPopup(popup_71014a90b515920984f33208ee2d9725)
+        ;
+
+        
+    
+    
+            circle_marker_9f4808943a9ee4034360d34776e584b6.bindTooltip(
+                `<div>
+                     Malbork, ul. Mickiewicza (PmMalMickiew)<br>Średnia: 1.10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66f862ddb2a2001c2d117b2ea1e6eed5 = L.circleMarker(
+                [54.601139, 18.239361],
+                {"bubblingMouseEvents": true, "color": "#feb54fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb54fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_8f9b41b4fbf5bc4f9404f0b76335dea1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4890da3797c58e0580dc8facc1ecfdce = $(`<div id="html_4890da3797c58e0580dc8facc1ecfdce" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmWejhPlWejh<br>         <b>Nazwa stacji:</b> WIOŚ Wejherowo - Jakuba Wejhera<br>         <b>Data uruchomienia:</b> 2003-07-01 00:00:00<br>         <b>Data zamknięcia:</b> 2018-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Wejherowo<br>         <b>Adres:</b> pl. Jakuba Wejhera 8<br>         <b>Średnia:</b> 2.40         </div>`)[0];
+                popup_8f9b41b4fbf5bc4f9404f0b76335dea1.setContent(html_4890da3797c58e0580dc8facc1ecfdce);
+            
+        
+
+        circle_marker_66f862ddb2a2001c2d117b2ea1e6eed5.bindPopup(popup_8f9b41b4fbf5bc4f9404f0b76335dea1)
+        ;
+
+        
+    
+    
+            circle_marker_66f862ddb2a2001c2d117b2ea1e6eed5.bindTooltip(
+                `<div>
+                     WIOŚ Wejherowo - Jakuba Wejhera (PmWejhPlWejh)<br>Średnia: 2.40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd8838f7400abecd82647fc8a78980fe = L.circleMarker(
+                [54.793639, 18.409944],
+                {"bubblingMouseEvents": true, "color": "#fff3adff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3adff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_22e6237857c5dd64547c39fa156f0e75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e41583c901ade0a7fc6e189a5ec2dce3 = $(`<div id="html_e41583c901ade0a7fc6e189a5ec2dce3" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> PmWladywHallera<br>         <b>Nazwa stacji:</b> WIOŚ Władysławowo - Hallera<br>         <b>Data uruchomienia:</b> 2004-09-23 00:00:00<br>         <b>Data zamknięcia:</b> 2015-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Władysławowo<br>         <b>Adres:</b> ul. Hallera<br>         <b>Średnia:</b> 0.80         </div>`)[0];
+                popup_22e6237857c5dd64547c39fa156f0e75.setContent(html_e41583c901ade0a7fc6e189a5ec2dce3);
+            
+        
+
+        circle_marker_fd8838f7400abecd82647fc8a78980fe.bindPopup(popup_22e6237857c5dd64547c39fa156f0e75)
+        ;
+
+        
+    
+    
+            circle_marker_fd8838f7400abecd82647fc8a78980fe.bindTooltip(
+                `<div>
+                     WIOŚ Władysławowo - Hallera (PmWladywHallera)<br>Średnia: 0.80
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3f365b9afd32a4f93c35662107ff242 = L.circleMarker(
+                [50.872549, 20.604998],
+                {"bubblingMouseEvents": true, "color": "#feb04bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb04bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_c67589c55bb266162594195e199457b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b5ad3fb7117df9b89d20b29c1eaeb51 = $(`<div id="html_5b5ad3fb7117df9b89d20b29c1eaeb51" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> SkKielJagiel<br>         <b>Nazwa stacji:</b> Kielce, ul. Jagiellońska<br>         <b>Data uruchomienia:</b> 2010-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2018-05-24 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> ŚWIĘTOKRZYSKIE<br>         <b>Miejscowość:</b> Kielce<br>         <b>Adres:</b> ul. Jagiellońska 68<br>         <b>Średnia:</b> 2.49         </div>`)[0];
+                popup_c67589c55bb266162594195e199457b0.setContent(html_5b5ad3fb7117df9b89d20b29c1eaeb51);
+            
+        
+
+        circle_marker_f3f365b9afd32a4f93c35662107ff242.bindPopup(popup_c67589c55bb266162594195e199457b0)
+        ;
+
+        
+    
+    
+            circle_marker_f3f365b9afd32a4f93c35662107ff242.bindTooltip(
+                `<div>
+                     Kielce, ul. Jagiellońska (SkKielJagiel)<br>Średnia: 2.49
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db545a867fb9ae046843037308455f2d = L.circleMarker(
+                [50.878998, 20.633692],
+                {"bubblingMouseEvents": true, "color": "#fed975ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed975ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_fb6064935872b7ca2bf0cb4fe465b611 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6da91caa51455a5fcc5a09c7523a1819 = $(`<div id="html_6da91caa51455a5fcc5a09c7523a1819" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> SkKielTargow<br>         <b>Nazwa stacji:</b> Kielce, ul. Targowa<br>         <b>Data uruchomienia:</b> 2018-07-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> ŚWIĘTOKRZYSKIE<br>         <b>Miejscowość:</b> Kielce<br>         <b>Adres:</b> ul. Targowa 3<br>         <b>Średnia:</b> 1.74         </div>`)[0];
+                popup_fb6064935872b7ca2bf0cb4fe465b611.setContent(html_6da91caa51455a5fcc5a09c7523a1819);
+            
+        
+
+        circle_marker_db545a867fb9ae046843037308455f2d.bindPopup(popup_fb6064935872b7ca2bf0cb4fe465b611)
+        ;
+
+        
+    
+    
+            circle_marker_db545a867fb9ae046843037308455f2d.bindTooltip(
+                `<div>
+                     Kielce, ul. Targowa (SkKielTargow)<br>Średnia: 1.74
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_858b8952ac0ed722fac4ba7d56404a0f = L.circleMarker(
+                [50.264611, 18.975028],
+                {"bubblingMouseEvents": true, "color": "#fea546ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea546ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_7f4b4d685fd5d93127e213a45dd7dac0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b0c7fb2af56e3b8b20d3af81945e585 = $(`<div id="html_0b0c7fb2af56e3b8b20d3af81945e585" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> SlKatoKossut<br>         <b>Nazwa stacji:</b> Katowice, ul. Kossutha<br>         <b>Data uruchomienia:</b> 1992-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> ŚLĄSKIE<br>         <b>Miejscowość:</b> Katowice<br>         <b>Adres:</b> ul. Kossutha 6<br>         <b>Średnia:</b> 2.71         </div>`)[0];
+                popup_7f4b4d685fd5d93127e213a45dd7dac0.setContent(html_0b0c7fb2af56e3b8b20d3af81945e585);
+            
+        
+
+        circle_marker_858b8952ac0ed722fac4ba7d56404a0f.bindPopup(popup_7f4b4d685fd5d93127e213a45dd7dac0)
+        ;
+
+        
+    
+    
+            circle_marker_858b8952ac0ed722fac4ba7d56404a0f.bindTooltip(
+                `<div>
+                     Katowice, ul. Kossutha (SlKatoKossut)<br>Średnia: 2.71
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8e49f83de4eba70df016154de8b53e7 = L.circleMarker(
+                [53.789233, 20.486075],
+                {"bubblingMouseEvents": true, "color": "#fff7b8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7b8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_3e4c898ba8d0e572350c59488470eaa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe48301b42ce1234138dfe197e85b4d0 = $(`<div id="html_fe48301b42ce1234138dfe197e85b4d0" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> WmOlsPuszkin<br>         <b>Nazwa stacji:</b> Olsztyn, ul. Puszkina<br>         <b>Data uruchomienia:</b> 2004-06-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> WARMIŃSKO-MAZURSKIE<br>         <b>Miejscowość:</b> Olsztyn<br>         <b>Adres:</b> ul. Puszkina 16<br>         <b>Średnia:</b> 0.62         </div>`)[0];
+                popup_3e4c898ba8d0e572350c59488470eaa2.setContent(html_fe48301b42ce1234138dfe197e85b4d0);
+            
+        
+
+        circle_marker_b8e49f83de4eba70df016154de8b53e7.bindPopup(popup_3e4c898ba8d0e572350c59488470eaa2)
+        ;
+
+        
+    
+    
+            circle_marker_b8e49f83de4eba70df016154de8b53e7.bindTooltip(
+                `<div>
+                     Olsztyn, ul. Puszkina (WmOlsPuszkin)<br>Średnia: 0.62
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a874a716010c9a3d1136f8dd589d12e = L.circleMarker(
+                [53.770833, 20.49],
+                {"bubblingMouseEvents": true, "color": "#fffbc0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffbc0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_424a547a05d103c1b84cf290cb8b719b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4df45007c8565e45eb53379a32147823 = $(`<div id="html_4df45007c8565e45eb53379a32147823" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> WmOlsztyWSSE_Zolnier<br>         <b>Nazwa stacji:</b> Olsztyn - WSEE Żołnierska<br>         <b>Data uruchomienia:</b> 2003-01-01 00:00:00<br>         <b>Data zamknięcia:</b> 2009-12-31 00:00:00<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> WARMIŃSKO-MAZURSKIE<br>         <b>Miejscowość:</b> Olsztyn<br>         <b>Adres:</b> ul. Żołnierska<br>         <b>Średnia:</b> 0.49         </div>`)[0];
+                popup_424a547a05d103c1b84cf290cb8b719b.setContent(html_4df45007c8565e45eb53379a32147823);
+            
+        
+
+        circle_marker_4a874a716010c9a3d1136f8dd589d12e.bindPopup(popup_424a547a05d103c1b84cf290cb8b719b)
+        ;
+
+        
+    
+    
+            circle_marker_4a874a716010c9a3d1136f8dd589d12e.bindTooltip(
+                `<div>
+                     Olsztyn - WSEE Żołnierska (WmOlsztyWSSE_Zolnier)<br>Średnia: 0.49
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c853d69aefc088c90fd97f09d7f5fec0 = L.circleMarker(
+                [54.124819, 22.038056],
+                {"bubblingMouseEvents": true, "color": "#fffecaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffecaff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_242390c58e548f84d941dcbf5554693f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_506edb11e4ac721b35872798bfa77644 = $(`<div id="html_506edb11e4ac721b35872798bfa77644" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> WmPuszczaBor<br>         <b>Nazwa stacji:</b> Diabla Góra, Puszcza Borecka<br>         <b>Data uruchomienia:</b> 1994-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> rozproszona<br>         <b>Województwo:</b> WARMIŃSKO-MAZURSKIE<br>         <b>Miejscowość:</b> Diabla Góra<br>         <b>Adres:</b> Diabla Góra<br>         <b>Średnia:</b> 0.33         </div>`)[0];
+                popup_242390c58e548f84d941dcbf5554693f.setContent(html_506edb11e4ac721b35872798bfa77644);
+            
+        
+
+        circle_marker_c853d69aefc088c90fd97f09d7f5fec0.bindPopup(popup_242390c58e548f84d941dcbf5554693f)
+        ;
+
+        
+    
+    
+            circle_marker_c853d69aefc088c90fd97f09d7f5fec0.bindTooltip(
+                `<div>
+                     Diabla Góra, Puszcza Borecka (WmPuszczaBor)<br>Średnia: 0.33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42bc96513fb6840331f02a13b199f6f5 = L.circleMarker(
+                [53.154408, 16.759572],
+                {"bubblingMouseEvents": true, "color": "#ffe794ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe794ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_ea7a1844ab0ef46dec197b7bbf33b622 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0427b18b5501f19532ba23d29e7deb78 = $(`<div id="html_0427b18b5501f19532ba23d29e7deb78" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> WpPilaKusoci<br>         <b>Nazwa stacji:</b> Pila, ul. Kusocińskiego<br>         <b>Data uruchomienia:</b> 2003-01-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> WIELKOPOLSKIE<br>         <b>Miejscowość:</b> Piła<br>         <b>Adres:</b> ul. Kusocińskiego 10A<br>         <b>Średnia:</b> 1.22         </div>`)[0];
+                popup_ea7a1844ab0ef46dec197b7bbf33b622.setContent(html_0427b18b5501f19532ba23d29e7deb78);
+            
+        
+
+        circle_marker_42bc96513fb6840331f02a13b199f6f5.bindPopup(popup_ea7a1844ab0ef46dec197b7bbf33b622)
+        ;
+
+        
+    
+    
+            circle_marker_42bc96513fb6840331f02a13b199f6f5.bindTooltip(
+                `<div>
+                     Pila, ul. Kusocińskiego (WpPilaKusoci)<br>Średnia: 1.22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_febe64a1e6491df191cb9b4ebc3ee8ab = L.circleMarker(
+                [52.459192, 16.9062],
+                {"bubblingMouseEvents": true, "color": "#fffabfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffabfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_8445f3d989eca7247b197a6231b63eb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f36e38e3b6afd7e972913319ab17e6b = $(`<div id="html_5f36e38e3b6afd7e972913319ab17e6b" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> WpPoznSzyman<br>         <b>Nazwa stacji:</b> Poznań, ul. Szymanowskiego<br>         <b>Data uruchomienia:</b> 2004-04-01 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> wolnostojący pobornik pyłu<br>         <b>Województwo:</b> WIELKOPOLSKIE<br>         <b>Miejscowość:</b> Poznań<br>         <b>Adres:</b> ul. Szymanowskiego 17<br>         <b>Średnia:</b> 0.50         </div>`)[0];
+                popup_8445f3d989eca7247b197a6231b63eb4.setContent(html_5f36e38e3b6afd7e972913319ab17e6b);
+            
+        
+
+        circle_marker_febe64a1e6491df191cb9b4ebc3ee8ab.bindPopup(popup_8445f3d989eca7247b197a6231b63eb4)
+        ;
+
+        
+    
+    
+            circle_marker_febe64a1e6491df191cb9b4ebc3ee8ab.bindTooltip(
+                `<div>
+                     Poznań, ul. Szymanowskiego (WpPoznSzyman)<br>Średnia: 0.50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_572be5d1c8af24a2fcaae5825756d102 = L.circleMarker(
+                [53.380975, 14.663347],
+                {"bubblingMouseEvents": true, "color": "#fff8b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8b9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_087124be72d2ad52155c2d01d43c5653);
+        
+    
+        var popup_17654a27c1fd300a4712196f84a297a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2882faec7b8a2e400766f5a415802176 = $(`<div id="html_2882faec7b8a2e400766f5a415802176" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> ZpSzczAndrze<br>         <b>Nazwa stacji:</b> Szczecin, ul. Andrzejewskiego<br>         <b>Data uruchomienia:</b> 2004-12-31 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> ZACHODNIOPOMORSKIE<br>         <b>Miejscowość:</b> Szczecin<br>         <b>Adres:</b> ul. Andrzejewskiego 23<br>         <b>Średnia:</b> 0.61         </div>`)[0];
+                popup_17654a27c1fd300a4712196f84a297a2.setContent(html_2882faec7b8a2e400766f5a415802176);
+            
+        
+
+        circle_marker_572be5d1c8af24a2fcaae5825756d102.bindPopup(popup_17654a27c1fd300a4712196f84a297a2)
+        ;
+
+        
+    
+    
+            circle_marker_572be5d1c8af24a2fcaae5825756d102.bindTooltip(
+                `<div>
+                     Szczecin, ul. Andrzejewskiego (ZpSzczAndrze)<br>Średnia: 0.61
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_087124be72d2ad52155c2d01d43c5653.addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+        
+    
+            var feature_group_98920404ea65fb3c79a82b50da8c92e8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_9e2316a9a005477af18d21fc38a67ca4 = L.circleMarker(
+                [50.972167, 14.941319],
+                {"bubblingMouseEvents": true, "color": "#fff3adff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3adff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_98920404ea65fb3c79a82b50da8c92e8);
+        
+    
+        var popup_807f065313613645609ba261a676aee4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e511bf0f1ed10fe643aad1d89a16e250 = $(`<div id="html_e511bf0f1ed10fe643aad1d89a16e250" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> DsDzialoszyn<br>         <b>Nazwa stacji:</b> Działoszyn<br>         <b>Data uruchomienia:</b> 1996-07-01 00:00:00<br>         <b>Data zamknięcia:</b> 2022-12-31 00:00:00<br>         <b>Typ stacji:</b> przemysłowa<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> DOLNOŚLĄSKIE<br>         <b>Miejscowość:</b> Działoszyn<br>         <b>Adres:</b> nan<br>         <b>Średnia:</b> 0.80         </div>`)[0];
+                popup_807f065313613645609ba261a676aee4.setContent(html_e511bf0f1ed10fe643aad1d89a16e250);
+            
+        
+
+        circle_marker_9e2316a9a005477af18d21fc38a67ca4.bindPopup(popup_807f065313613645609ba261a676aee4)
+        ;
+
+        
+    
+    
+            circle_marker_9e2316a9a005477af18d21fc38a67ca4.bindTooltip(
+                `<div>
+                     Działoszyn (DsDzialoszyn)<br>Średnia: 0.80
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2330985c0c6460e2a0b2e2ab7511c443 = L.circleMarker(
+                [52.191733, 21.051053],
+                {"bubblingMouseEvents": true, "color": "#fff1a8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff1a8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_98920404ea65fb3c79a82b50da8c92e8);
+        
+    
+        var popup_5f1187046bad565ff4b4b546536a716f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29ff43b89dca7976bb4f601e70ac38c3 = $(`<div id="html_29ff43b89dca7976bb4f601e70ac38c3" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> MzWarszBernWoda<br>         <b>Nazwa stacji:</b> Warszawa-Bernardyńska<br>         <b>Data uruchomienia:</b> 1996-04-26 00:00:00<br>         <b>Data zamknięcia:</b> 2013-12-31 00:00:00<br>         <b>Typ stacji:</b> przemysłowa<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> MAZOWIECKIE<br>         <b>Miejscowość:</b> Warszawa<br>         <b>Adres:</b> ul. Przy Bernardyńskiej Wodzie 7<br>         <b>Średnia:</b> 0.88         </div>`)[0];
+                popup_5f1187046bad565ff4b4b546536a716f.setContent(html_29ff43b89dca7976bb4f601e70ac38c3);
+            
+        
+
+        circle_marker_2330985c0c6460e2a0b2e2ab7511c443.bindPopup(popup_5f1187046bad565ff4b4b546536a716f)
+        ;
+
+        
+    
+    
+            circle_marker_2330985c0c6460e2a0b2e2ab7511c443.bindTooltip(
+                `<div>
+                     Warszawa-Bernardyńska (MzWarszBernWoda)<br>Średnia: 0.88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_98920404ea65fb3c79a82b50da8c92e8.addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+        
+    
+            var feature_group_e94c359898633591eaee5a9256db49f1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_91acde3d537673f4dc887570c576677d = L.circleMarker(
+                [54.508097, 18.539853],
+                {"bubblingMouseEvents": true, "color": "#fff4b1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e94c359898633591eaee5a9256db49f1);
+        
+    
+        var popup_a1c2c2393d298d9295e4610a8c31d041 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ae5378cbd0efb15e4c4e91468dbdf22 = $(`<div id="html_5ae5378cbd0efb15e4c4e91468dbdf22" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> Pm.00.s237m<br>         <b>Nazwa stacji:</b> WIOŚ Gdynia - Piłsudskiego<br>         <b>Data uruchomienia:</b> 2004-08-17 00:00:00<br>         <b>Data zamknięcia:</b> 2011-12-31 00:00:00<br>         <b>Typ stacji:</b> komunikacyjna<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> w budynku<br>         <b>Województwo:</b> POMORSKIE<br>         <b>Miejscowość:</b> Gdynia<br>         <b>Adres:</b> ul. Piłsudskiego 52/54<br>         <b>Średnia:</b> 0.73         </div>`)[0];
+                popup_a1c2c2393d298d9295e4610a8c31d041.setContent(html_5ae5378cbd0efb15e4c4e91468dbdf22);
+            
+        
+
+        circle_marker_91acde3d537673f4dc887570c576677d.bindPopup(popup_a1c2c2393d298d9295e4610a8c31d041)
+        ;
+
+        
+    
+    
+            circle_marker_91acde3d537673f4dc887570c576677d.bindTooltip(
+                `<div>
+                     WIOŚ Gdynia - Piłsudskiego (Pm.00.s237m)<br>Średnia: 0.73
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92ea3ebf43efdf0adb91140ccb06774a = L.circleMarker(
+                [53.432169, 14.5539],
+                {"bubblingMouseEvents": true, "color": "#fecf6aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fecf6aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e94c359898633591eaee5a9256db49f1);
+        
+    
+        var popup_5e9b1b41c886465b20f11acf0951fe6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fed9f65e3167afe0f7d70b77623f3887 = $(`<div id="html_fed9f65e3167afe0f7d70b77623f3887" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> ZpSzczPilsud<br>         <b>Nazwa stacji:</b> Szczecin, ul. Piłsudskiego<br>         <b>Data uruchomienia:</b> 2004-12-31 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> komunikacyjna<br>         <b>Typ obszaru:</b> miejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> ZACHODNIOPOMORSKIE<br>         <b>Miejscowość:</b> Szczecin<br>         <b>Adres:</b> ul. Piłsudskiego 1<br>         <b>Średnia:</b> 1.93         </div>`)[0];
+                popup_5e9b1b41c886465b20f11acf0951fe6f.setContent(html_fed9f65e3167afe0f7d70b77623f3887);
+            
+        
+
+        circle_marker_92ea3ebf43efdf0adb91140ccb06774a.bindPopup(popup_5e9b1b41c886465b20f11acf0951fe6f)
+        ;
+
+        
+    
+    
+            circle_marker_92ea3ebf43efdf0adb91140ccb06774a.bindTooltip(
+                `<div>
+                     Szczecin, ul. Piłsudskiego (ZpSzczPilsud)<br>Średnia: 1.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_e94c359898633591eaee5a9256db49f1.addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+        
+    
+    var color_map_3b8bdf67331b99316e9a27211b1196f3 = {};
+
+    
+    color_map_3b8bdf67331b99316e9a27211b1196f3.color = d3.scale.threshold()
+              .domain([0.29131756756756755, 0.30284477309161206, 0.3143719786156565, 0.32589918413970104, 0.33742638966374555, 0.34895359518779, 0.3604808007118345, 0.37200800623587904, 0.3835352117599235, 0.395062417283968, 0.40658962280801253, 0.418116828332057, 0.4296440338561015, 0.441171239380146, 0.4526984449041905, 0.464225650428235, 0.47575285595227945, 0.48728006147632397, 0.4988072670003685, 0.510334472524413, 0.5218616780484575, 0.533388883572502, 0.5449160890965464, 0.556443294620591, 0.5679705001446353, 0.57949770566868, 0.5910249111927244, 0.6025521167167689, 0.6140793222408134, 0.6256065277648579, 0.6371337332889024, 0.648660938812947, 0.6601881443369915, 0.671715349861036, 0.6832425553850804, 0.694769760909125, 0.7062969664331694, 0.7178241719572139, 0.7293513774812583, 0.7408785830053028, 0.7524057885293474, 0.7639329940533919, 0.7754601995774364, 0.7869874051014809, 0.7985146106255253, 0.8100418161495698, 0.8215690216736143, 0.8330962271976589, 0.8446234327217033, 0.8561506382457479, 0.8676778437697924, 0.8792050492938369, 0.8907322548178813, 0.9022594603419258, 0.9137866658659703, 0.9253138713900149, 0.9368410769140593, 0.9483682824381038, 0.9598954879621483, 0.9714226934861929, 0.9829498990102373, 0.9944771045342818, 1.0060043100583265, 1.0175315155823708, 1.0290587211064153, 1.0405859266304598, 1.0521131321545043, 1.0636403376785486, 1.0751675432025931, 1.0866947487266376, 1.0982219542506824, 1.1097491597747267, 1.1212763652987712, 1.1328035708228157, 1.1443307763468602, 1.1558579818709047, 1.1673851873949492, 1.1789123929189937, 1.1904395984430383, 1.2019668039670828, 1.2134940094911273, 1.2250212150151718, 1.2365484205392163, 1.2480756260632608, 1.2596028315873053, 1.2711300371113499, 1.2826572426353942, 1.294184448159439, 1.305711653683483, 1.3172388592075275, 1.328766064731572, 1.3402932702556165, 1.351820475779661, 1.3633476813037055, 1.37487488682775, 1.3864020923517946, 1.397929297875839, 1.4094565033998836, 1.4209837089239281, 1.4325109144479726, 1.4440381199720171, 1.4555653254960617, 1.4670925310201062, 1.4786197365441507, 1.4901469420681952, 1.5016741475922397, 1.5132013531162842, 1.5247285586403287, 1.5362557641643733, 1.5477829696884178, 1.5593101752124623, 1.5708373807365064, 1.5823645862605509, 1.5938917917845954, 1.60541899730864, 1.6169462028326844, 1.628473408356729, 1.6400006138807735, 1.6515278194048184, 1.6630550249288625, 1.674582230452907, 1.6861094359769515, 1.697636641500996, 1.7091638470250405, 1.720691052549085, 1.7322182580731296, 1.743745463597174, 1.7552726691212186, 1.7667998746452631, 1.7783270801693076, 1.7898542856933521, 1.8013814912173967, 1.8129086967414412, 1.8244359022654857, 1.8359631077895298, 1.8474903133135743, 1.8590175188376188, 1.8705447243616633, 1.8820719298857078, 1.8935991354097528, 1.9051263409337973, 1.9166535464578418, 1.9281807519818859, 1.9397079575059304, 1.951235163029975, 1.9627623685540194, 1.974289574078064, 1.9858167796021085, 1.997343985126153, 2.0088711906501975, 2.020398396174242, 2.0319256016982865, 2.043452807222331, 2.0549800127463755, 2.06650721827042, 2.0780344237944646, 2.089561629318509, 2.101088834842553, 2.1126160403665977, 2.124143245890642, 2.135670451414687, 2.1471976569387317, 2.158724862462776, 2.1702520679868207, 2.181779273510865, 2.1933064790349093, 2.204833684558954, 2.2163608900829983, 2.227888095607043, 2.2394153011310873, 2.250942506655132, 2.2624697121791764, 2.273996917703221, 2.2855241232272654, 2.29705132875131, 2.3085785342753544, 2.3201057397993985, 2.331632945323443, 2.3431601508474875, 2.3546873563715325, 2.3662145618955766, 2.3777417674196215, 2.3892689729436656, 2.4007961784677105, 2.4123233839917546, 2.423850589515799, 2.4353777950398436, 2.446905000563888, 2.4584322060879327, 2.469959411611977, 2.4814866171360217, 2.493013822660066, 2.5045410281841103, 2.5160682337081552, 2.5275954392321998, 2.5391226447562443, 2.550649850280289, 2.5621770558043333, 2.573704261328378, 2.585231466852422, 2.596758672376467, 2.608285877900511, 2.619813083424556, 2.6313402889486, 2.642867494472645, 2.654394699996689, 2.665921905520734, 2.677449111044778, 2.6889763165688225, 2.700503522092867, 2.7120307276169116, 2.723557933140956, 2.7350851386650006, 2.746612344189045, 2.7581395497130896, 2.769666755237134, 2.7811939607611786, 2.792721166285223, 2.8042483718092677, 2.815775577333312, 2.8273027828573567, 2.838829988381401, 2.8503571939054453, 2.8618843994294902, 2.8734116049535343, 2.8849388104775793, 2.8964660160016233, 2.9079932215256683, 2.9195204270497124, 2.931047632573757, 2.9425748380978014, 2.954102043621846, 2.9656292491458904, 2.977156454669935, 2.9886836601939795, 3.000210865718024, 3.011738071242069, 3.023265276766113, 3.0347924822901575, 3.046319687814202, 3.0578468933382466, 3.069374098862291, 3.0809013043863356, 3.09242850991038, 3.1039557154344246, 3.1154829209584687, 3.1270101264825136, 3.1385373320065577, 3.1500645375306027, 3.1615917430546467, 3.1731189485786917, 3.1846461541027358, 3.1961733596267803, 3.207700565150825, 3.2192277706748693, 3.230754976198914, 3.2422821817229583, 3.2538093872470033, 3.2653365927710474, 3.2768637982950923, 3.2883910038191364, 3.299918209343181, 3.3114454148672254, 3.32297262039127, 3.3344998259153145, 3.346027031439359, 3.3575542369634035, 3.369081442487448, 3.380608648011492, 3.392135853535537, 3.403663059059581, 3.415190264583626, 3.42671747010767, 3.438244675631715, 3.449771881155759, 3.4612990866798037, 3.472826292203848, 3.4843534977278927, 3.4958807032519377, 3.5074079087759817, 3.5189351143000267, 3.5304623198240708, 3.5419895253481157, 3.55351673087216, 3.5650439363962043, 3.576571141920249, 3.5880983474442933, 3.599625552968338, 3.6111527584923824, 3.622679964016427, 3.6342071695404714, 3.6457343750645155, 3.6572615805885604, 3.6687887861126045, 3.6803159916366495, 3.6918431971606935, 3.7033704026847385, 3.7148976082087826, 3.726424813732827, 3.737952019256872, 3.749479224780916, 3.761006430304961, 3.772533635829005, 3.78406084135305, 3.795588046877094, 3.807115252401139, 3.818642457925183, 3.8301696634492277, 3.8416968689732722, 3.8532240744973167, 3.8647512800213613, 3.8762784855454058, 3.8878056910694503, 3.899332896593495, 3.910860102117539, 3.922387307641584, 3.933914513165628, 3.945441718689673, 3.956968924213717, 3.968496129737762, 3.9800233352618064, 3.9915505407858505, 4.003077746309896, 4.01460495183394, 4.026132157357985, 4.037659362882029, 4.049186568406074, 4.060713773930118, 4.072240979454163, 4.083768184978207, 4.095295390502251, 4.106822596026296, 4.11834980155034, 4.129877007074385, 4.141404212598429, 4.152931418122474, 4.164458623646518, 4.175985829170562, 4.187513034694607, 4.199040240218651, 4.210567445742696, 4.22209465126674, 4.233621856790785, 4.24514906231483, 4.256676267838874, 4.268203473362919, 4.279730678886963, 4.291257884411008, 4.302785089935052, 4.3143122954590964, 4.325839500983141, 4.3373667065071855, 4.3488939120312295, 4.3604211175552745, 4.371948323079319, 4.3834755286033635, 4.395002734127408, 4.406529939651453, 4.4180571451754975, 4.429584350699541, 4.441111556223586, 4.452638761747631, 4.464165967271676, 4.47569317279572, 4.487220378319764, 4.498747583843809, 4.510274789367854, 4.521801994891898, 4.533329200415942, 4.544856405939987, 4.556383611464031, 4.567910816988076, 4.57943802251212, 4.590965228036165, 4.602492433560209, 4.614019639084254, 4.625546844608298, 4.637074050132342, 4.648601255656387, 4.660128461180432, 4.671655666704476, 4.68318287222852, 4.694710077752565, 4.70623728327661, 4.717764488800653, 4.729291694324698, 4.740818899848743, 4.752346105372788, 4.763873310896832, 4.775400516420876, 4.786927721944921, 4.798454927468965, 4.80998213299301, 4.821509338517054, 4.833036544041099, 4.844563749565143, 4.856090955089188, 4.867618160613232, 4.879145366137276, 4.890672571661321, 4.902199777185366, 4.91372698270941, 4.925254188233454, 4.936781393757499, 4.948308599281544, 4.9598358048055875, 4.9713630103296325, 4.982890215853677, 4.994417421377722, 5.0059446269017664, 5.0174718324258105, 5.0289990379498555, 5.0405262434739, 5.0520534489979445, 5.063580654521989, 5.0751078600460335, 5.086635065570078, 5.098162271094123, 5.109689476618167, 5.121216682142212, 5.132743887666256, 5.144271093190301, 5.155798298714345, 5.167325504238389, 5.178852709762434, 5.190379915286479, 5.201907120810523, 5.213434326334567, 5.224961531858612, 5.236488737382657, 5.248015942906701, 5.259543148430745, 5.27107035395479, 5.282597559478835, 5.294124765002879, 5.305651970526923, 5.317179176050968, 5.328706381575012, 5.340233587099057, 5.351760792623101, 5.363287998147146, 5.37481520367119, 5.386342409195235, 5.397869614719279, 5.409396820243323, 5.420924025767368, 5.432451231291413, 5.443978436815457, 5.455505642339501, 5.467032847863546, 5.478560053387591, 5.490087258911635, 5.501614464435679, 5.513141669959724, 5.524668875483769, 5.536196081007813, 5.547723286531857, 5.559250492055902, 5.570777697579946, 5.582304903103991, 5.593832108628035, 5.60535931415208, 5.616886519676124, 5.628413725200169, 5.639940930724213, 5.651468136248258, 5.6629953417723025, 5.674522547296347, 5.6860497528203915, 5.697576958344436, 5.7091041638684805, 5.7206313693925255, 5.73215857491657, 5.743685780440614, 5.755212985964659, 5.7667401914887035, 5.778267397012748, 5.789794602536792, 5.801321808060837, 5.812849013584882, 5.824376219108926, 5.83590342463297, 5.847430630157015, 5.858957835681059, 5.870485041205104, 5.882012246729148, 5.893539452253193, 5.905066657777237, 5.916593863301282, 5.928121068825326, 5.93964827434937, 5.951175479873415, 5.96270268539746, 5.974229890921505, 5.985757096445548, 5.997284301969593, 6.008811507493638, 6.020338713017682, 6.031865918541726, 6.043393124065771])
+              .range(['#ffffccff', '#ffffccff', '#ffffcbff', '#ffffcaff', '#fffec9ff', '#fffec9ff', '#fffec8ff', '#fffdc7ff', '#fffdc7ff', '#fffdc6ff', '#fffdc5ff', '#fffcc5ff', '#fffcc4ff', '#fffcc3ff', '#fffbc2ff', '#fffbc2ff', '#fffbc1ff', '#fffbc0ff', '#fffac0ff', '#fffabfff', '#fffabeff', '#fff9bdff', '#fff9bdff', '#fff9bcff', '#fff9bbff', '#fff8bbff', '#fff8baff', '#fff8b9ff', '#fff7b8ff', '#fff7b8ff', '#fff7b7ff', '#fff7b6ff', '#fff6b6ff', '#fff6b5ff', '#fff6b4ff', '#fff5b4ff', '#fff5b3ff', '#fff5b2ff', '#fff4b1ff', '#fff4b1ff', '#fff4b0ff', '#fff4afff', '#fff3afff', '#fff3aeff', '#fff3adff', '#fff2acff', '#fff2acff', '#fff2abff', '#fff2aaff', '#fff1aaff', '#fff1a9ff', '#fff1a8ff', '#fff0a7ff', '#fff0a7ff', '#fff0a6ff', '#fff0a5ff', '#ffefa5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeea0ff', '#ffeda0ff', '#ffed9fff', '#ffed9eff', '#ffec9eff', '#ffec9dff', '#ffec9cff', '#ffeb9cff', '#ffeb9bff', '#ffeb9aff', '#ffea9aff', '#ffea99ff', '#ffea98ff', '#ffe998ff', '#ffe997ff', '#ffe996ff', '#ffe896ff', '#ffe895ff', '#ffe894ff', '#ffe794ff', '#ffe793ff', '#ffe792ff', '#ffe692ff', '#ffe691ff', '#ffe690ff', '#ffe68fff', '#ffe58fff', '#ffe58eff', '#ffe58dff', '#ffe48dff', '#ffe48cff', '#ffe48bff', '#ffe38bff', '#ffe38aff', '#ffe389ff', '#ffe289ff', '#ffe288ff', '#ffe287ff', '#ffe187ff', '#ffe186ff', '#ffe185ff', '#ffe085ff', '#ffe084ff', '#ffe083ff', '#ffdf83ff', '#ffdf82ff', '#ffdf81ff', '#ffde81ff', '#ffde80ff', '#ffde7fff', '#ffdd7fff', '#ffdd7eff', '#ffdd7dff', '#ffdc7dff', '#ffdc7cff', '#ffdc7bff', '#ffdc7bff', '#ffdb7aff', '#ffdb79ff', '#ffdb78ff', '#ffda78ff', '#ffda77ff', '#ffda76ff', '#fed976ff', '#fed975ff', '#fed874ff', '#fed774ff', '#fed773ff', '#fed672ff', '#fed572ff', '#fed571ff', '#fed470ff', '#fed470ff', '#fed36fff', '#fed26eff', '#fed26eff', '#fed16dff', '#fed06cff', '#fed06cff', '#fecf6bff', '#fecf6aff', '#fece6aff', '#fecd69ff', '#fecd68ff', '#fecc68ff', '#fecb67ff', '#fecb66ff', '#feca66ff', '#feca65ff', '#fec964ff', '#fec864ff', '#fec863ff', '#fec762ff', '#fec662ff', '#fec661ff', '#fec560ff', '#fec45fff', '#fec45fff', '#fec35eff', '#fec35dff', '#fec25dff', '#fec15cff', '#fec15bff', '#fec05bff', '#febf5aff', '#febf59ff', '#febe59ff', '#febe58ff', '#febd57ff', '#febc57ff', '#febc56ff', '#febb55ff', '#feba55ff', '#feba54ff', '#feb953ff', '#feb953ff', '#feb852ff', '#feb751ff', '#feb751ff', '#feb650ff', '#feb54fff', '#feb54fff', '#feb44eff', '#feb44dff', '#feb34dff', '#feb24cff', '#feb24cff', '#feb14bff', '#feb04bff', '#feb04bff', '#feaf4bff', '#feaf4aff', '#feae4aff', '#feae4aff', '#fead4aff', '#feac49ff', '#feac49ff', '#feab49ff', '#feab48ff', '#feaa48ff', '#fea948ff', '#fea948ff', '#fea847ff', '#fea847ff', '#fea747ff', '#fea647ff', '#fea646ff', '#fea546ff', '#fea546ff', '#fea446ff', '#fea345ff', '#fea345ff', '#fea245ff', '#fea245ff', '#fea144ff', '#fea044ff', '#fea044ff', '#fe9f44ff', '#fe9f43ff', '#fe9e43ff', '#fe9d43ff', '#fe9d43ff', '#fe9c42ff', '#fe9c42ff', '#fe9b42ff', '#fe9a42ff', '#fe9a41ff', '#fe9941ff', '#fe9941ff', '#fe9840ff', '#fe9740ff', '#fe9740ff', '#fe9640ff', '#fe963fff', '#fe953fff', '#fe943fff', '#fe943fff', '#fe933eff', '#fe933eff', '#fe923eff', '#fe923eff', '#fe913dff', '#fe903dff', '#fe903dff', '#fe8f3dff', '#fe8f3cff', '#fe8e3cff', '#fe8d3cff', '#fd8d3cff', '#fd8c3bff', '#fd8b3bff', '#fd8a3bff', '#fd883aff', '#fd873aff', '#fd863aff', '#fd853aff', '#fd8439ff', '#fd8339ff', '#fd8239ff', '#fd8138ff', '#fd8038ff', '#fd7f38ff', '#fd7e38ff', '#fd7d37ff', '#fd7c37ff', '#fd7b37ff', '#fd7a36ff', '#fd7936ff', '#fd7836ff', '#fd7736ff', '#fd7635ff', '#fd7535ff', '#fd7435ff', '#fd7334ff', '#fd7234ff', '#fd7134ff', '#fd7033ff', '#fd6f33ff', '#fd6e33ff', '#fd6d33ff', '#fd6c32ff', '#fd6b32ff', '#fd6a32ff', '#fd6931ff', '#fd6831ff', '#fd6731ff', '#fd6631ff', '#fd6530ff', '#fd6430ff', '#fd6330ff', '#fd622fff', '#fd612fff', '#fd602fff', '#fd5f2fff', '#fd5e2eff', '#fd5d2eff', '#fd5c2eff', '#fd5b2dff', '#fd5a2dff', '#fd592dff', '#fd582dff', '#fd572cff', '#fd562cff', '#fd552cff', '#fd542bff', '#fd532bff', '#fd522bff', '#fd512aff', '#fd502aff', '#fd4f2aff', '#fc4e2aff', '#fc4d29ff', '#fc4c29ff', '#fb4b29ff', '#fb4a29ff', '#fa4a29ff', '#fa4928ff', '#fa4828ff', '#f94728ff', '#f94628ff', '#f84527ff', '#f84427ff', '#f84427ff', '#f74327ff', '#f74226ff', '#f64126ff', '#f64026ff', '#f63f26ff', '#f53f26ff', '#f53e25ff', '#f43d25ff', '#f43c25ff', '#f43b25ff', '#f33a24ff', '#f33a24ff', '#f23924ff', '#f23824ff', '#f23724ff', '#f13623ff', '#f13523ff', '#f03523ff', '#f03423ff', '#f03322ff', '#ef3222ff', '#ef3122ff', '#ee3022ff', '#ee3022ff', '#ee2f21ff', '#ed2e21ff', '#ed2d21ff', '#ec2c21ff', '#ec2b20ff', '#ec2b20ff', '#eb2a20ff', '#eb2920ff', '#ea281fff', '#ea271fff', '#ea261fff', '#e9261fff', '#e9251fff', '#e8241eff', '#e8231eff', '#e8221eff', '#e7211eff', '#e7211dff', '#e6201dff', '#e61f1dff', '#e61e1dff', '#e51d1dff', '#e51c1cff', '#e41b1cff', '#e41b1cff', '#e31a1cff', '#e3191cff', '#e2191cff', '#e2181cff', '#e1181cff', '#e0181cff', '#e0171dff', '#df171dff', '#df161dff', '#de161dff', '#dd161dff', '#dd151dff', '#dc151eff', '#dc141eff', '#db141eff', '#da131eff', '#da131eff', '#d9131eff', '#d9121eff', '#d8121fff', '#d7111fff', '#d7111fff', '#d6111fff', '#d5101fff', '#d5101fff', '#d40f20ff', '#d40f20ff', '#d30e20ff', '#d20e20ff', '#d20e20ff', '#d10d20ff', '#d10d21ff', '#d00c21ff', '#cf0c21ff', '#cf0b21ff', '#ce0b21ff', '#ce0b21ff', '#cd0a22ff', '#cc0a22ff', '#cc0922ff', '#cb0922ff', '#ca0922ff', '#ca0822ff', '#c90822ff', '#c90723ff', '#c80723ff', '#c70623ff', '#c70623ff', '#c60623ff', '#c60523ff', '#c50524ff', '#c40424ff', '#c40424ff', '#c30424ff', '#c30324ff', '#c20324ff', '#c10225ff', '#c10225ff', '#c00125ff', '#bf0125ff', '#bf0125ff', '#be0025ff', '#be0026ff', '#bd0026ff', '#bc0026ff', '#bb0026ff', '#ba0026ff', '#b90026ff', '#b80026ff', '#b70026ff', '#b60026ff', '#b50026ff', '#b40026ff', '#b30026ff', '#b20026ff', '#b10026ff', '#b00026ff', '#af0026ff', '#ae0026ff', '#ad0026ff', '#ac0026ff', '#ab0026ff', '#aa0026ff', '#a90026ff', '#a80026ff', '#a70026ff', '#a60026ff', '#a50026ff', '#a40026ff', '#a30026ff', '#a20026ff', '#a10026ff', '#a00026ff', '#9f0026ff', '#9e0026ff', '#9d0026ff', '#9c0026ff', '#9b0026ff', '#9b0026ff', '#9a0026ff', '#990026ff', '#980026ff', '#970026ff', '#960026ff', '#950026ff', '#940026ff', '#930026ff', '#920026ff', '#910026ff', '#900026ff', '#8f0026ff', '#8e0026ff', '#8d0026ff', '#8c0026ff', '#8b0026ff', '#8a0026ff', '#890026ff', '#880026ff', '#870026ff', '#860026ff', '#850026ff', '#840026ff', '#830026ff', '#820026ff', '#810026ff', '#800026ff']);
+    
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.x = d3.scale.linear()
+              .domain([0.29131756756756755, 6.043393124065771])
+              .range([0, 450 - 50]);
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.legend = L.control({position: 'topright'});
+    color_map_3b8bdf67331b99316e9a27211b1196f3.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_3b8bdf67331b99316e9a27211b1196f3.legend.addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.xAxis = d3.svg.axis()
+        .scale(color_map_3b8bdf67331b99316e9a27211b1196f3.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.29131756756756755, 1.010327012129843, 1.7293364566921183, 2.4483459012543936, 3.167355345816669, 3.886364790378945, 4.60537423494122, 5.324383679503495, 6.043393124065771]);
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.g = color_map_3b8bdf67331b99316e9a27211b1196f3.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.g.selectAll("rect")
+        .data(color_map_3b8bdf67331b99316e9a27211b1196f3.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_3b8bdf67331b99316e9a27211b1196f3.x(color_map_3b8bdf67331b99316e9a27211b1196f3.color.domain()[i - 1]) : color_map_3b8bdf67331b99316e9a27211b1196f3.x.range()[0],
+            x1: i < color_map_3b8bdf67331b99316e9a27211b1196f3.color.domain().length ? color_map_3b8bdf67331b99316e9a27211b1196f3.x(color_map_3b8bdf67331b99316e9a27211b1196f3.color.domain()[i]) : color_map_3b8bdf67331b99316e9a27211b1196f3.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_3b8bdf67331b99316e9a27211b1196f3.g.call(color_map_3b8bdf67331b99316e9a27211b1196f3.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("\u015arednie zanieczyszczenie");
+    
+            var layer_control_79b637289e7a4f5e4531dcd8baba1210_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0d25fbeadd7624b32db100a50a6e8454,
+                },
+                overlays :  {
+                    "Typ: t\u0142o" : feature_group_087124be72d2ad52155c2d01d43c5653,
+                    "Typ: przemys\u0142owa" : feature_group_98920404ea65fb3c79a82b50da8c92e8,
+                    "Typ: komunikacyjna" : feature_group_e94c359898633591eaee5a9256db49f1,
+                },
+            };
+            let layer_control_79b637289e7a4f5e4531dcd8baba1210 = L.control.layers(
+                layer_control_79b637289e7a4f5e4531dcd8baba1210_layers.base_layers,
+                layer_control_79b637289e7a4f5e4531dcd8baba1210_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_519d66543f7f15eb5ac28f42d3a4ec25);
+
+        
+</script>
+</html>

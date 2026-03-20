@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Przegląd lokalizacji{% endblock %}
+{% block content %}
+
+<h1>{{ location }}</h1>
+
+<form method="GET" id="locationForm">
+    <label for="locationInput">Wybierz miejscowość:</label>
+    <input list="locations" name="location" id="locationInput" value="{{ location }}" autocomplete="off">
+    <datalist id="locations">
+        {% for loc in all_locations %}
+            <option value="{{ loc }}">
+        {% endfor %}
+    </datalist>
+    <button type="submit">Pokaż</button>
+</form>
+
+<hr>
+
+<div id="plots-container">
+    {% if not station_codes %}
+        <p><strong>Brak danych dla wybranej lokalizacji.</strong></p>
+    {% else %}
+        {% for pollutant in all_pollutants %}
+        <section class="pollutant-section" id="section-{{ loop.index }}">
+            <h2>{{ pollutant }}</h2>
+            <div class="plot-placeholder" data-pollutant="{{ pollutant }}">
+                <p class="loading-msg">Ładowanie wykresu…</p>
+            </div>
+            <hr>
+        </section>
+        {% endfor %}
+    {% endif %}
+</div>
+
+<script>
+const stationCodes = {{ station_codes | tojson }};
+
+// innerHTML does not execute <script> tags — this helper does it manually.
+function injectHTML(container, html) {
+    container.innerHTML = html;
+    container.querySelectorAll('script').forEach(function(oldScript) {
+        const newScript = document.createElement('script');
+        newScript.text = oldScript.text;
+        oldScript.replaceWith(newScript);
+    });
+}
+
+document.querySelectorAll('.plot-placeholder').forEach(function(div) {
+    const pollutant = div.dataset.pollutant;
+
+    const params = new URLSearchParams({ pollutant });
+    stationCodes.forEach(code => params.append('station_codes', code));
+
+    fetch('/api/climatology?' + params.toString())
+        .then(r => r.json())
+        .then(data => {
+            if (data.html) {
+                injectHTML(div, data.html);
+            } else {
+                div.innerHTML = '<p class="no-data">Brak danych dla tej lokalizacji.</p>';
+            }
+        })
+        .catch(() => {
+            div.innerHTML = '<p class="no-data">Błąd ładowania wykresu.</p>';
+        });
+});
+</script>
+
+{% endblock %}

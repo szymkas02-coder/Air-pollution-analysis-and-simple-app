@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa47a724f2ed13696049e461e31ecfdb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa47a724f2ed13696049e461e31ecfdb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa47a724f2ed13696049e461e31ecfdb = L.map(
+                "map_aa47a724f2ed13696049e461e31ecfdb",
+                {
+                    center: [52.0, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_aa47a724f2ed13696049e461e31ecfdb);
+
+            
+
+        
+    
+            var tile_layer_f61ad80cccb0a609540f2a135b6ca9f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f61ad80cccb0a609540f2a135b6ca9f5.addTo(map_aa47a724f2ed13696049e461e31ecfdb);
+        
+    
+            var feature_group_15d9488e3cd9c36be4c936b24dd24ca2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e0eda8a32aea9fb711fbc03903bbdd41 = L.circleMarker(
+                [53.662117, 17.934017],
+                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15d9488e3cd9c36be4c936b24dd24ca2);
+        
+    
+        var popup_6df99cbfb8195fc68833a1405010d8cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3314aefceb109f3fed4b3d6b93b9a761 = $(`<div id="html_3314aefceb109f3fed4b3d6b93b9a761" style="width: 100.0%; height: 100.0%;">         <b>Kod stacji:</b> KpZielBoryTu<br>         <b>Nazwa stacji:</b> Zielonka, Bory Tucholskie<br>         <b>Data uruchomienia:</b> 2004-05-27 00:00:00<br>         <b>Data zamknięcia:</b> NaT<br>         <b>Typ stacji:</b> tło<br>         <b>Typ obszaru:</b> pozamiejski<br>         <b>Rodzaj stacji:</b> kontenerowa stacjonarna<br>         <b>Województwo:</b> KUJAWSKO-POMORSKIE<br>         <b>Miejscowość:</b> Zielonka<br>         <b>Adres:</b> Bory Tucholskie<br>         <b>Średnia:</b> 0.89         </div>`)[0];
+                popup_6df99cbfb8195fc68833a1405010d8cd.setContent(html_3314aefceb109f3fed4b3d6b93b9a761);
+            
+        
+
+        circle_marker_e0eda8a32aea9fb711fbc03903bbdd41.bindPopup(popup_6df99cbfb8195fc68833a1405010d8cd)
+        ;
+
+        
+    
+    
+            circle_marker_e0eda8a32aea9fb711fbc03903bbdd41.bindTooltip(
+                `<div>
+                     Zielonka, Bory Tucholskie (KpZielBoryTu)<br>Średnia: 0.89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_15d9488e3cd9c36be4c936b24dd24ca2.addTo(map_aa47a724f2ed13696049e461e31ecfdb);
+        
+    
+    var color_map_0888b47d40356f107db2b2e0165b05aa = {};
+
+    
+    color_map_0888b47d40356f107db2b2e0165b05aa.color = d3.scale.threshold()
+              .domain([0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098])
+              .range(['#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff', '#ffffccff']);
+    
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.x = d3.scale.linear()
+              .domain([0.8878784209950098, 0.8878784209950098])
+              .range([0, 450 - 50]);
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.legend = L.control({position: 'topright'});
+    color_map_0888b47d40356f107db2b2e0165b05aa.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_0888b47d40356f107db2b2e0165b05aa.legend.addTo(map_aa47a724f2ed13696049e461e31ecfdb);
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.xAxis = d3.svg.axis()
+        .scale(color_map_0888b47d40356f107db2b2e0165b05aa.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098, 0.8878784209950098]);
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.g = color_map_0888b47d40356f107db2b2e0165b05aa.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.g.selectAll("rect")
+        .data(color_map_0888b47d40356f107db2b2e0165b05aa.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_0888b47d40356f107db2b2e0165b05aa.x(color_map_0888b47d40356f107db2b2e0165b05aa.color.domain()[i - 1]) : color_map_0888b47d40356f107db2b2e0165b05aa.x.range()[0],
+            x1: i < color_map_0888b47d40356f107db2b2e0165b05aa.color.domain().length ? color_map_0888b47d40356f107db2b2e0165b05aa.x(color_map_0888b47d40356f107db2b2e0165b05aa.color.domain()[i]) : color_map_0888b47d40356f107db2b2e0165b05aa.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_0888b47d40356f107db2b2e0165b05aa.g.call(color_map_0888b47d40356f107db2b2e0165b05aa.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("\u015arednie zanieczyszczenie");
+    
+            var layer_control_edcd099501340f9c23a824c0377f695f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f61ad80cccb0a609540f2a135b6ca9f5,
+                },
+                overlays :  {
+                    "Typ: t\u0142o" : feature_group_15d9488e3cd9c36be4c936b24dd24ca2,
+                },
+            };
+            let layer_control_edcd099501340f9c23a824c0377f695f = L.control.layers(
+                layer_control_edcd099501340f9c23a824c0377f695f_layers.base_layers,
+                layer_control_edcd099501340f9c23a824c0377f695f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_aa47a724f2ed13696049e461e31ecfdb);
+
+        
+</script>
+</html>

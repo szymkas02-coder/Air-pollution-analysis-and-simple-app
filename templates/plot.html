@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Wykres{% endblock %}
+{% block content %}
+
+<h1>Wykres stężenia – {{ selected_station }}</h1>
+
+<form method="GET">
+    <label for="pollutant">Zanieczyszczenie:</label>
+    <select name="pollutant" id="pollutant" onchange="this.form.submit()">
+        {% for p in all_pollutants %}
+            <option value="{{ p }}" {% if p == selected_pollutant %}selected{% endif %}>{{ p }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="station">Stacja:</label>
+    <select name="station" id="station" onchange="this.form.submit()">
+        {% for s in stations %}
+            <option value="{{ s }}" {% if s == selected_station %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+    </select>
+</form>
+
+<div class="plot-container">
+    {{ plot_html | safe }}
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,28 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mapa zanieczyszczeń{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Plotly loaded once here; individual plots use include_plotlyjs=False -->
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <a href="{{ url_for('index') }}">Mapy</a>
+    <a href="{{ url_for('plot') }}">Wykresy</a>
+    <a href="{{ url_for('location_overview') }}">Przegląd lokalizacji</a>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer-note">
+    Źródło danych: <strong>Główny Inspektorat Ochrony Środowiska (GIOŚ)</strong>
+</footer>
+
+</body>
+</html>
